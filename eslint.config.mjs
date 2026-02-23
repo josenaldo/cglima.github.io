@@ -53,7 +53,7 @@ const eslintConfig = defineConfig([
                         ["^next$", "^next/"],
                         // 3. External npm packages
                         //    @mui/*, other @-scoped, and unscoped packages
-                        ["^@mui/", "^@(?!pog|data)[^/]+", "^[a-z]"],
+                        ["^@mui/", "^@[^/]+", "^[a-z]"],
                         // 4. Internal project aliases (@/*)
                         ["^@/"],
                         // 5. Data layer (@/data/*, contentlayer)

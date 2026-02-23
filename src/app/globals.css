@@ -1,0 +1,19 @@
+/* Global styles – MUI handles theming via Emotion / ThemeProvider.
+   Keep this file minimal; component-level styles live in theme.ts.        */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
