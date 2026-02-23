@@ -1,0 +1,45 @@
+{
+    "folders": [
+        {
+            "path": "..",
+            "name": "PROJETO_ATIVO",
+        },
+        {
+            "path": "../../josenaldo.github.io",
+            "name": "READONLY_BLOG",
+        },
+        {
+            "path": "../../livro-pog",
+            "name": "READONLY_LIVRO",
+        },
+    ],
+    "settings": {
+        "files.readonlyInclude": {
+            "/home/josenaldo/repos/personal/josenaldo.github.io/**": true,
+            "/home/josenaldo/repos/personal/livro-pog/**": true,
+        },
+        "workbench.colorCustomizations": {
+            "activityBar.activeBackground": "#b6779a",
+            "activityBar.background": "#b6779a",
+            "activityBar.foreground": "#15202b",
+            "activityBar.inactiveForeground": "#15202b99",
+            "activityBarBadge.background": "#c1d2ac",
+            "activityBarBadge.foreground": "#15202b",
+            "commandCenter.border": "#e7e7e799",
+            "editorGroup.border": "#b6779a",
+            "sash.hoverBorder": "#b6779a",
+            "sideBar.border": "#b6779a",
+            "statusBar.background": "#a35781",
+            "statusBar.foreground": "#e7e7e7",
+            "statusBarItem.hoverBackground": "#b6779a",
+            "statusBarItem.remoteBackground": "#a35781",
+            "statusBarItem.remoteForeground": "#e7e7e7",
+            "tab.activeBorder": "#b6779a",
+            "titleBar.activeBackground": "#a35781",
+            "titleBar.activeForeground": "#e7e7e7",
+            "titleBar.inactiveBackground": "#a3578199",
+            "titleBar.inactiveForeground": "#e7e7e799",
+        },
+        "peacock.color": "#A35781",
+    },
+}
