@@ -1,0 +1,195 @@
+{
+    "nav": {
+        "home": "Home",
+        "blog": "Blog",
+        "projects": "Projects",
+        "experiences": "Experiences",
+        "skills": "Skills",
+        "courses": "Courses",
+        "services": "Services",
+        "presentations": "Presentations",
+        "publications": "Publications",
+        "search": "Search",
+        "contact": "Contact"
+    },
+    "common": {
+        "readMore": "Read more",
+        "viewAll": "View all",
+        "viewProject": "View project",
+        "viewRepository": "View repository",
+        "loading": "Loading...",
+        "noResults": "No results found.",
+        "back": "Back",
+        "next": "Next",
+        "previous": "Previous",
+        "language": "Language",
+        "toggleTheme": "Toggle theme",
+        "lightMode": "Light mode",
+        "darkMode": "Dark mode",
+        "search": "Search",
+        "searchPlaceholder": "Search the site..."
+    },
+    "home": {
+        "title": "Home",
+        "hero": {
+            "greeting": "Hi, I'm",
+            "cta": {
+                "resume": "View resume",
+                "contact": "Get in touch"
+            }
+        },
+        "featuredProjects": {
+            "title": "Featured Projects",
+            "subtitle": "A selection of my best work"
+        },
+        "latestPosts": {
+            "title": "Latest Posts",
+            "subtitle": "Articles and tutorials about software development"
+        },
+        "experiences": {
+            "title": "Experience",
+            "subtitle": "My professional journey"
+        },
+        "services": {
+            "title": "Services",
+            "subtitle": "What I can do for you"
+        },
+        "testimonials": {
+            "title": "Testimonials",
+            "subtitle": "What people say about my work"
+        }
+    },
+    "blog": {
+        "title": "Blog",
+        "subtitle": "Articles and tutorials about software development",
+        "readTime": "{minutes} min read",
+        "postedOn": "Posted on",
+        "by": "by",
+        "tags": "Tags",
+        "category": "Category",
+        "share": "Share"
+    },
+    "projects": {
+        "title": "Projects",
+        "subtitle": "A selection of my best work",
+        "viewProject": "View project",
+        "viewCode": "View code",
+        "tags": "Technologies"
+    },
+    "experiences": {
+        "title": "Experience",
+        "subtitle": "My professional journey",
+        "present": "Present"
+    },
+    "skills": {
+        "title": "Skills",
+        "subtitle": "Technologies and tools I use",
+        "levels": {
+            "basic": "Basic",
+            "intermediate": "Intermediate",
+            "advanced": "Advanced",
+            "expert": "Expert"
+        },
+        "since": "Since {year}"
+    },
+    "courses": {
+        "title": "Courses & Certifications",
+        "subtitle": "Continuous learning",
+        "workload": "{hours}h",
+        "certificate": "View certificate",
+        "courseLink": "View course"
+    },
+    "services": {
+        "title": "Services",
+        "subtitle": "What I can do for you"
+    },
+    "presentations": {
+        "title": "Presentations",
+        "subtitle": "Talks and workshops I have given",
+        "viewSlides": "View slides",
+        "viewVideo": "View video"
+    },
+    "publications": {
+        "title": "Publications",
+        "subtitle": "Articles, books, and other published materials",
+        "viewPublication": "View publication",
+        "types": {
+            "article": "Article",
+            "book": "Book",
+            "paper": "Paper",
+            "tutorial": "Tutorial",
+            "other": "Other"
+        }
+    },
+    "search": {
+        "title": "Search",
+        "subtitle": "Search all site content",
+        "placeholder": "Search...",
+        "results": "{count} result(s) found",
+        "noResults": "No results for \"{query}\"",
+        "searching": "Searching..."
+    },
+    "contact": {
+        "title": "Contact",
+        "subtitle": "Let's talk!",
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "send": "Send message",
+        "github": "GitHub",
+        "linkedin": "LinkedIn",
+        "twitter": "Twitter",
+        "noLinks": "No contact links configured."
+    },
+    "footer": {
+        "rights": "All rights reserved.",
+        "madeWith": "Made with",
+        "by": "by"
+    },
+    "metadata": {
+        "home": {
+            "title": "Home",
+            "description": "Personal site and portfolio"
+        },
+        "blog": {
+            "title": "Blog",
+            "description": "Articles and tutorials about software development"
+        },
+        "projects": {
+            "title": "Projects",
+            "description": "Software development projects"
+        },
+        "experiences": {
+            "title": "Experience",
+            "description": "Professional journey"
+        },
+        "skills": {
+            "title": "Skills",
+            "description": "Technologies and tools"
+        },
+        "courses": {
+            "title": "Courses",
+            "description": "Courses and certifications"
+        },
+        "services": {
+            "title": "Services",
+            "description": "Services offered"
+        },
+        "presentations": {
+            "title": "Presentations",
+            "description": "Talks and workshops"
+        },
+        "publications": {
+            "title": "Publications",
+            "description": "Articles and other published materials"
+        },
+        "search": {
+            "title": "Search",
+            "description": "Search the site"
+        },
+        "contact": {
+            "title": "Contact",
+            "description": "Get in touch"
+        }
+    }
+}

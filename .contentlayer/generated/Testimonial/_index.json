@@ -1,1 +1,65 @@
-[]
+[
+  {
+    "name": "Bugada",
+    "position": "Gata",
+    "testimonial": "Miau.",
+    "image": "/images/testimonials/bugada.jpg",
+    "show": true,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "testimonials/pt/bugada.md",
+    "_raw": {
+      "sourceFilePath": "testimonials/pt/bugada.md",
+      "sourceFileName": "bugada.md",
+      "sourceFileDir": "testimonials/pt",
+      "contentType": "markdown",
+      "flattenedPath": "testimonials/pt/bugada"
+    },
+    "type": "Testimonial",
+    "locale": "pt"
+  },
+  {
+    "name": "Leão Lascado",
+    "position": "Leão empalhado",
+    "testimonial": "Não faço a mínima ideia de como vim parar aqui.",
+    "image": "/images/testimonials/leao-lascado.jpg",
+    "show": true,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "testimonials/pt/leao-lascado.md",
+    "_raw": {
+      "sourceFilePath": "testimonials/pt/leao-lascado.md",
+      "sourceFileName": "leao-lascado.md",
+      "sourceFileDir": "testimonials/pt",
+      "contentType": "markdown",
+      "flattenedPath": "testimonials/pt/leao-lascado"
+    },
+    "type": "Testimonial",
+    "locale": "pt"
+  },
+  {
+    "name": "Lesada",
+    "position": "Gata",
+    "testimonial": "Miau miaaaaaau! Fsssssst!",
+    "image": "/images/testimonials/lesada.jpg",
+    "show": true,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "testimonials/pt/lesada.md",
+    "_raw": {
+      "sourceFilePath": "testimonials/pt/lesada.md",
+      "sourceFileName": "lesada.md",
+      "sourceFileDir": "testimonials/pt",
+      "contentType": "markdown",
+      "flattenedPath": "testimonials/pt/lesada"
+    },
+    "type": "Testimonial",
+    "locale": "pt"
+  }
+]

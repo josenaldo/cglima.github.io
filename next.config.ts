@@ -1,6 +1,18 @@
 import type { NextConfig } from 'next'
 // @ts-expect-error – next-contentlayer2 has no TS types yet
 import { withContentlayer } from 'next-contentlayer2'
+import createNextIntlPlugin from 'next-intl/plugin'
+import withPWA from '@ducanh2912/next-pwa'
+
+const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts')
+
+const pwaConfig = withPWA({
+    dest: 'public',
+    cacheOnFrontEndNav: true,
+    aggressiveFrontEndNavCaching: true,
+    reloadOnOnline: true,
+    disable: process.env.NODE_ENV === 'development',
+})
 
 const nextConfig: NextConfig = {
     output: 'export',
@@ -24,4 +36,4 @@ const nextConfig: NextConfig = {
     },
 }
 
-export default withContentlayer(nextConfig)
+export default withNextIntl(withContentlayer(pwaConfig(nextConfig)))

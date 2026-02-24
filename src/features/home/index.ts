@@ -1,0 +1,6 @@
+export { default as Hero } from './components/Hero'
+export { default as FeaturedProjects } from './components/FeaturedProjects'
+export { default as LatestPosts } from './components/LatestPosts'
+export { default as ExperiencesSection } from './components/ExperiencesSection'
+export { default as ServicesSection } from './components/ServicesSection'
+export { default as TestimonialsSection } from './components/TestimonialsSection'

@@ -1,1 +1,90 @@
-[]
+[
+  {
+    "order": 3,
+    "title": "Architecture & Tech Leadership",
+    "description": "System design, tradeoff analysis, technical roadmaps, and helping teams ship consistently with good engineering practices.",
+    "image": "/images/default.jpg",
+    "icon": "architecture",
+    "show": true,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "services/pt/architecture-leadership.md",
+    "_raw": {
+      "sourceFilePath": "services/pt/architecture-leadership.md",
+      "sourceFileName": "architecture-leadership.md",
+      "sourceFileDir": "services/pt",
+      "contentType": "markdown",
+      "flattenedPath": "services/pt/architecture-leadership"
+    },
+    "type": "Service",
+    "locale": "pt"
+  },
+  {
+    "order": 2,
+    "title": "Backend & APIs",
+    "description": "Reliable APIs, integrations, and data flows (Java/Node.js), with pragmatic testing and observability.",
+    "image": "/images/default.jpg",
+    "icon": "api",
+    "show": true,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "services/pt/backend-apis.md",
+    "_raw": {
+      "sourceFilePath": "services/pt/backend-apis.md",
+      "sourceFileName": "backend-apis.md",
+      "sourceFileDir": "services/pt",
+      "contentType": "markdown",
+      "flattenedPath": "services/pt/backend-apis"
+    },
+    "type": "Service",
+    "locale": "pt"
+  },
+  {
+    "order": 4,
+    "title": "Mentoring & Code Reviews",
+    "description": "Pairing sessions, reviews, and coaching focused on clarity, maintainability, and building a strong developer mindset.",
+    "image": "/images/default.jpg",
+    "icon": "mentoring",
+    "show": true,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "services/pt/mentoring-reviews.md",
+    "_raw": {
+      "sourceFilePath": "services/pt/mentoring-reviews.md",
+      "sourceFileName": "mentoring-reviews.md",
+      "sourceFileDir": "services/pt",
+      "contentType": "markdown",
+      "flattenedPath": "services/pt/mentoring-reviews"
+    },
+    "type": "Service",
+    "locale": "pt"
+  },
+  {
+    "order": 1,
+    "title": "Web Development",
+    "description": "Modern, accessible, and performant web apps with React and Next.js — from MVPs to production hardening.",
+    "image": "/images/default.jpg",
+    "icon": "code",
+    "show": true,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "services/pt/web-development.md",
+    "_raw": {
+      "sourceFilePath": "services/pt/web-development.md",
+      "sourceFileName": "web-development.md",
+      "sourceFileDir": "services/pt",
+      "contentType": "markdown",
+      "flattenedPath": "services/pt/web-development"
+    },
+    "type": "Service",
+    "locale": "pt"
+  }
+]

@@ -1,11 +1,32 @@
-import type { Metadata } from 'next'
-import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter'
+import type { Metadata, Viewport } from 'next'
 
 import './globals.css'
+import AppConfig from '@/config/AppConfig'
 
 export const metadata: Metadata = {
-    title: 'Portfolio',
-    description: 'Personal portfolio site',
+    title: {
+        default: AppConfig.siteName,
+        template: `%s | ${AppConfig.siteName}`,
+    },
+    description: 'Personal portfolio and blog.',
+    metadataBase: new URL(AppConfig.siteUrl),
+    manifest: '/manifest.json',
+    icons: {
+        icon: '/favicon.ico',
+    },
+    openGraph: {
+        type: 'website',
+        siteName: AppConfig.siteName,
+        locale: 'pt_BR',
+    },
+    robots: {
+        index: true,
+        follow: true,
+    },
+}
+
+export const viewport: Viewport = {
+    themeColor: '#8855DF',
 }
 
 export default function RootLayout({
@@ -14,7 +35,7 @@ export default function RootLayout({
     children: React.ReactNode
 }>) {
     return (
-        <html lang="pt-BR">
+        <html suppressHydrationWarning>
             <head>
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link
@@ -27,9 +48,7 @@ export default function RootLayout({
                     href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
                 />
             </head>
-            <body>
-                <AppRouterCacheProvider>{children}</AppRouterCacheProvider>
-            </body>
+            <body>{children}</body>
         </html>
     )
 }

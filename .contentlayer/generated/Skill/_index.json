@@ -1,1 +1,1619 @@
-[]
+[
+  {
+    "name": "AssertJ",
+    "level": "intermediate",
+    "firstContact": 2023,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/assertj.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/assertj.md",
+      "sourceFileName": "assertj.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/assertj"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "assertj",
+    "url": "/skills/assertj"
+  },
+  {
+    "name": "AWS",
+    "level": "intermediate",
+    "firstContact": 2015,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/aws.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/aws.md",
+      "sourceFileName": "aws.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/aws"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "aws",
+    "url": "/skills/aws"
+  },
+  {
+    "name": "Bootstrap",
+    "level": "advanced",
+    "firstContact": 2011,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/bootstrap.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/bootstrap.md",
+      "sourceFileName": "bootstrap.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/bootstrap"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "bootstrap",
+    "url": "/skills/bootstrap"
+  },
+  {
+    "name": "CDI",
+    "level": "advanced",
+    "firstContact": 2014,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/cdi.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/cdi.md",
+      "sourceFileName": "cdi.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/cdi"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "cdi",
+    "url": "/skills/cdi"
+  },
+  {
+    "name": "CI/CD",
+    "level": "intermediate",
+    "firstContact": 2008,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/ci-cd.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/ci-cd.md",
+      "sourceFileName": "ci-cd.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/ci-cd"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "ci-cd",
+    "url": "/skills/ci-cd"
+  },
+  {
+    "name": "Clean Code",
+    "level": "intermediate",
+    "firstContact": 2023,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/clean-code.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/clean-code.md",
+      "sourceFileName": "clean-code.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/clean-code"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "clean-code",
+    "url": "/skills/clean-code"
+  },
+  {
+    "name": "Content Layer",
+    "level": "advanced",
+    "firstContact": 2022,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/content-layer.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/content-layer.md",
+      "sourceFileName": "content-layer.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/content-layer"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "content-layer",
+    "url": "/skills/content-layer"
+  },
+  {
+    "name": "CQRS",
+    "level": "basic",
+    "firstContact": 2024,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/cqrs.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/cqrs.md",
+      "sourceFileName": "cqrs.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/cqrs"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "cqrs",
+    "url": "/skills/cqrs"
+  },
+  {
+    "name": "CSS",
+    "level": "advanced",
+    "firstContact": 2003,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/css.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/css.md",
+      "sourceFileName": "css.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/css"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "css",
+    "url": "/skills/css"
+  },
+  {
+    "name": "Database Modeling",
+    "level": "advanced",
+    "firstContact": 2003,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/database-modeling.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/database-modeling.md",
+      "sourceFileName": "database-modeling.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/database-modeling"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "database-modeling",
+    "url": "/skills/database-modeling"
+  },
+  {
+    "name": "Design Patterns",
+    "level": "advanced",
+    "firstContact": 2004,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/design-patterns.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/design-patterns.md",
+      "sourceFileName": "design-patterns.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/design-patterns"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "design-patterns",
+    "url": "/skills/design-patterns"
+  },
+  {
+    "name": "Django",
+    "level": "intermediate",
+    "firstContact": 2021,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/django.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/django.md",
+      "sourceFileName": "django.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/django"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "django",
+    "url": "/skills/django"
+  },
+  {
+    "name": "Docker",
+    "level": "advanced",
+    "firstContact": 2018,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/docker.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/docker.md",
+      "sourceFileName": "docker.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/docker"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "docker",
+    "url": "/skills/docker"
+  },
+  {
+    "name": "Domain-Driven Design",
+    "level": "advanced",
+    "firstContact": 2023,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/domain-driven-design.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/domain-driven-design.md",
+      "sourceFileName": "domain-driven-design.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/domain-driven-design"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "domain-driven-design",
+    "url": "/skills/domain-driven-design"
+  },
+  {
+    "name": "EJB",
+    "level": "advanced",
+    "firstContact": 2008,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/ejb.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/ejb.md",
+      "sourceFileName": "ejb.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/ejb"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "ejb",
+    "url": "/skills/ejb"
+  },
+  {
+    "name": "Event-driven architecture",
+    "level": "basic",
+    "firstContact": 2024,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/event-driven-architecture.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/event-driven-architecture.md",
+      "sourceFileName": "event-driven-architecture.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/event-driven-architecture"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "event-driven-architecture",
+    "url": "/skills/event-driven-architecture"
+  },
+  {
+    "name": "Event Sourcing",
+    "level": "basic",
+    "firstContact": 2024,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/event-sourcing.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/event-sourcing.md",
+      "sourceFileName": "event-sourcing.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/event-sourcing"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "event-sourcing",
+    "url": "/skills/event-sourcing"
+  },
+  {
+    "name": "Event Storming",
+    "level": "basic",
+    "firstContact": 2024,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/event-storming.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/event-storming.md",
+      "sourceFileName": "event-storming.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/event-storming"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "event-storming",
+    "url": "/skills/event-storming"
+  },
+  {
+    "name": "Express",
+    "level": "intermediate",
+    "firstContact": 2022,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/express.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/express.md",
+      "sourceFileName": "express.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/express"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "express",
+    "url": "/skills/express"
+  },
+  {
+    "name": "Git",
+    "level": "advanced",
+    "firstContact": 2013,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/git.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/git.md",
+      "sourceFileName": "git.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/git"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "git",
+    "url": "/skills/git"
+  },
+  {
+    "name": "Github",
+    "level": "advanced",
+    "firstContact": 2013,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/github.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/github.md",
+      "sourceFileName": "github.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/github"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "github",
+    "url": "/skills/github"
+  },
+  {
+    "name": "Gitlab",
+    "level": "intermediate",
+    "firstContact": 2023,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/gitlab.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/gitlab.md",
+      "sourceFileName": "gitlab.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/gitlab"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "gitlab",
+    "url": "/skills/gitlab"
+  },
+  {
+    "name": "Go",
+    "level": "basic",
+    "firstContact": 2024,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/go.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/go.md",
+      "sourceFileName": "go.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/go"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "go",
+    "url": "/skills/go"
+  },
+  {
+    "name": "Gradle",
+    "level": "basic",
+    "firstContact": 2024,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/gradle.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/gradle.md",
+      "sourceFileName": "gradle.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/gradle"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "gradle",
+    "url": "/skills/gradle"
+  },
+  {
+    "name": "GraphQL",
+    "level": "basic",
+    "firstContact": 2023,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/graphql.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/graphql.md",
+      "sourceFileName": "graphql.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/graphql"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "graphql",
+    "url": "/skills/graphql"
+  },
+  {
+    "name": "gRPC",
+    "level": "basic",
+    "firstContact": 2024,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/grpc.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/grpc.md",
+      "sourceFileName": "grpc.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/grpc"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "grpc",
+    "url": "/skills/grpc"
+  },
+  {
+    "name": "Hamcrest",
+    "level": "intermediate",
+    "firstContact": 2014,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/hamcrest.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/hamcrest.md",
+      "sourceFileName": "hamcrest.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/hamcrest"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "hamcrest",
+    "url": "/skills/hamcrest"
+  },
+  {
+    "name": "Hexagonal Architecture",
+    "level": "advanced",
+    "firstContact": 2023,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/hexagonal-architecture.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/hexagonal-architecture.md",
+      "sourceFileName": "hexagonal-architecture.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/hexagonal-architecture"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "hexagonal-architecture",
+    "url": "/skills/hexagonal-architecture"
+  },
+  {
+    "name": "Hibernate",
+    "level": "advanced",
+    "firstContact": 2008,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/hibernate.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/hibernate.md",
+      "sourceFileName": "hibernate.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/hibernate"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "hibernate",
+    "url": "/skills/hibernate"
+  },
+  {
+    "name": "HTML",
+    "level": "advanced",
+    "firstContact": 2003,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/html.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/html.md",
+      "sourceFileName": "html.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/html"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "html",
+    "url": "/skills/html"
+  },
+  {
+    "name": "Java",
+    "level": "advanced",
+    "firstContact": 2003,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/java.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/java.md",
+      "sourceFileName": "java.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/java"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "java",
+    "url": "/skills/java"
+  },
+  {
+    "name": "JavaScript",
+    "level": "advanced",
+    "firstContact": 2003,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/javascript.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/javascript.md",
+      "sourceFileName": "javascript.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/javascript"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "javascript",
+    "url": "/skills/javascript"
+  },
+  {
+    "name": "JDBC",
+    "level": "advanced",
+    "firstContact": 2003,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/jdbc.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/jdbc.md",
+      "sourceFileName": "jdbc.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/jdbc"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "jdbc",
+    "url": "/skills/jdbc"
+  },
+  {
+    "name": "Jenkins",
+    "level": "intermediate",
+    "firstContact": 2008,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/jenkins.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/jenkins.md",
+      "sourceFileName": "jenkins.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/jenkins"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "jenkins",
+    "url": "/skills/jenkins"
+  },
+  {
+    "name": "Jest",
+    "level": "intermediate",
+    "firstContact": 2022,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/jest.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/jest.md",
+      "sourceFileName": "jest.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/jest"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "jest",
+    "url": "/skills/jest"
+  },
+  {
+    "name": "JIRA",
+    "level": "intermediate",
+    "firstContact": 2022,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/jira.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/jira.md",
+      "sourceFileName": "jira.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/jira"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "jira",
+    "url": "/skills/jira"
+  },
+  {
+    "name": "JPA",
+    "level": "advanced",
+    "firstContact": 2010,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/jpa.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/jpa.md",
+      "sourceFileName": "jpa.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/jpa"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "jpa",
+    "url": "/skills/jpa"
+  },
+  {
+    "name": "JSF",
+    "level": "advanced",
+    "firstContact": 2008,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/jsf.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/jsf.md",
+      "sourceFileName": "jsf.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/jsf"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "jsf",
+    "url": "/skills/jsf"
+  },
+  {
+    "name": "JSP",
+    "level": "advanced",
+    "firstContact": 2003,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/jsp.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/jsp.md",
+      "sourceFileName": "jsp.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/jsp"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "jsp",
+    "url": "/skills/jsp"
+  },
+  {
+    "name": "JUnit",
+    "level": "advanced",
+    "firstContact": 2008,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/junit.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/junit.md",
+      "sourceFileName": "junit.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/junit"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "junit",
+    "url": "/skills/junit"
+  },
+  {
+    "name": "Apache Kafka",
+    "level": "advanced",
+    "firstContact": 2023,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/kafka.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/kafka.md",
+      "sourceFileName": "kafka.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/kafka"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "kafka",
+    "url": "/skills/kafka"
+  },
+  {
+    "name": "Apache Maven",
+    "level": "advanced",
+    "firstContact": 2008,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/maven.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/maven.md",
+      "sourceFileName": "maven.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/maven"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "maven",
+    "url": "/skills/maven"
+  },
+  {
+    "name": "Mentoring Junior Developers",
+    "level": "advanced",
+    "firstContact": 2007,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/mentoring-junior-developers.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/mentoring-junior-developers.md",
+      "sourceFileName": "mentoring-junior-developers.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/mentoring-junior-developers"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "mentoring-junior-developers",
+    "url": "/skills/mentoring-junior-developers"
+  },
+  {
+    "name": "Microservices",
+    "level": "advanced",
+    "firstContact": 2015,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/microservices.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/microservices.md",
+      "sourceFileName": "microservices.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/microservices"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "microservices",
+    "url": "/skills/microservices"
+  },
+  {
+    "name": "Mokito",
+    "level": "advanced",
+    "firstContact": 2008,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/mokito.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/mokito.md",
+      "sourceFileName": "mokito.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/mokito"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "mokito",
+    "url": "/skills/mokito"
+  },
+  {
+    "name": "MongoDB",
+    "level": "basic",
+    "firstContact": 2022,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/mongodb.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/mongodb.md",
+      "sourceFileName": "mongodb.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/mongodb"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "mongodb",
+    "url": "/skills/mongodb"
+  },
+  {
+    "name": "MUI (Material UI)",
+    "level": "advanced",
+    "firstContact": 2022,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/mui.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/mui.md",
+      "sourceFileName": "mui.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/mui"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "mui",
+    "url": "/skills/mui"
+  },
+  {
+    "name": "Mysql",
+    "level": "advanced",
+    "firstContact": 2003,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/mysql.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/mysql.md",
+      "sourceFileName": "mysql.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/mysql"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "mysql",
+    "url": "/skills/mysql"
+  },
+  {
+    "name": "NextJS",
+    "level": "advanced",
+    "firstContact": 2022,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/nextjs.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/nextjs.md",
+      "sourceFileName": "nextjs.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/nextjs"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "nextjs",
+    "url": "/skills/nextjs"
+  },
+  {
+    "name": "NodeJS",
+    "level": "intermediate",
+    "firstContact": 2022,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/nodejs.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/nodejs.md",
+      "sourceFileName": "nodejs.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/nodejs"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "nodejs",
+    "url": "/skills/nodejs"
+  },
+  {
+    "name": "Notion",
+    "level": "advanced",
+    "firstContact": 2020,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/notion.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/notion.md",
+      "sourceFileName": "notion.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/notion"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "notion",
+    "url": "/skills/notion"
+  },
+  {
+    "name": "Object-Oriented Programming",
+    "level": "advanced",
+    "firstContact": 2001,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/object-oriented-programming.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/object-oriented-programming.md",
+      "sourceFileName": "object-oriented-programming.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/object-oriented-programming"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "object-oriented-programming",
+    "url": "/skills/object-oriented-programming"
+  },
+  {
+    "name": "Oracle",
+    "level": "intermediate",
+    "firstContact": 2008,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/oracle.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/oracle.md",
+      "sourceFileName": "oracle.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/oracle"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "oracle",
+    "url": "/skills/oracle"
+  },
+  {
+    "name": "Pandas",
+    "level": "intermediate",
+    "firstContact": 2021,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/pandas.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/pandas.md",
+      "sourceFileName": "pandas.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/pandas"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "pandas",
+    "url": "/skills/pandas"
+  },
+  {
+    "name": "PostgreSQL",
+    "level": "advanced",
+    "firstContact": 2020,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/postgresql.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/postgresql.md",
+      "sourceFileName": "postgresql.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/postgresql"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "postgresql",
+    "url": "/skills/postgresql"
+  },
+  {
+    "name": "Progressive Web Apps",
+    "level": "advanced",
+    "firstContact": 2015,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/progressive-web-apps.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/progressive-web-apps.md",
+      "sourceFileName": "progressive-web-apps.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/progressive-web-apps"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "progressive-web-apps",
+    "url": "/skills/progressive-web-apps"
+  },
+  {
+    "name": "Python",
+    "level": "advanced",
+    "firstContact": 2021,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/python.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/python.md",
+      "sourceFileName": "python.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/python"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "python",
+    "url": "/skills/python"
+  },
+  {
+    "name": "React-admin",
+    "level": "advanced",
+    "firstContact": 2023,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/react-admin.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/react-admin.md",
+      "sourceFileName": "react-admin.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/react-admin"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "react-admin",
+    "url": "/skills/react-admin"
+  },
+  {
+    "name": "React Hook Form",
+    "level": "advanced",
+    "firstContact": 2023,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/react-hook-form.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/react-hook-form.md",
+      "sourceFileName": "react-hook-form.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/react-hook-form"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "react-hook-form",
+    "url": "/skills/react-hook-form"
+  },
+  {
+    "name": "React Router",
+    "level": "intermediate",
+    "firstContact": 2022,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/react-router.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/react-router.md",
+      "sourceFileName": "react-router.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/react-router"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "react-router",
+    "url": "/skills/react-router"
+  },
+  {
+    "name": "React",
+    "level": "advanced",
+    "firstContact": 2022,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/react.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/react.md",
+      "sourceFileName": "react.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/react"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "react",
+    "url": "/skills/react"
+  },
+  {
+    "name": "Redux",
+    "level": "intermediate",
+    "firstContact": 2022,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/redux.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/redux.md",
+      "sourceFileName": "redux.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/redux"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "redux",
+    "url": "/skills/redux"
+  },
+  {
+    "name": "Scrum",
+    "level": "advanced",
+    "firstContact": 2014,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/scrum.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/scrum.md",
+      "sourceFileName": "scrum.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/scrum"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "scrum",
+    "url": "/skills/scrum"
+  },
+  {
+    "name": "Software Architecture",
+    "level": "advanced",
+    "firstContact": 2015,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/software-architecture.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/software-architecture.md",
+      "sourceFileName": "software-architecture.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/software-architecture"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "software-architecture",
+    "url": "/skills/software-architecture"
+  },
+  {
+    "name": "Software Testing",
+    "level": "advanced",
+    "firstContact": 2008,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/software-testing.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/software-testing.md",
+      "sourceFileName": "software-testing.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/software-testing"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "software-testing",
+    "url": "/skills/software-testing"
+  },
+  {
+    "name": "SOLID",
+    "level": "advanced",
+    "firstContact": 2014,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/solid.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/solid.md",
+      "sourceFileName": "solid.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/solid"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "solid",
+    "url": "/skills/solid"
+  },
+  {
+    "name": "Spring Boot",
+    "level": "advanced",
+    "firstContact": 2015,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/spring-boot.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/spring-boot.md",
+      "sourceFileName": "spring-boot.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/spring-boot"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "spring-boot",
+    "url": "/skills/spring-boot"
+  },
+  {
+    "name": "Spring Data JPA",
+    "level": "advanced",
+    "firstContact": 2012,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/spring-data-jpa.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/spring-data-jpa.md",
+      "sourceFileName": "spring-data-jpa.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/spring-data-jpa"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "spring-data-jpa",
+    "url": "/skills/spring-data-jpa"
+  },
+  {
+    "name": "Spring Security",
+    "level": "advanced",
+    "firstContact": 2015,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/spring-security.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/spring-security.md",
+      "sourceFileName": "spring-security.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/spring-security"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "spring-security",
+    "url": "/skills/spring-security"
+  },
+  {
+    "name": "Spring Framework",
+    "level": "advanced",
+    "firstContact": 2012,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/spring.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/spring.md",
+      "sourceFileName": "spring.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/spring"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "spring",
+    "url": "/skills/spring"
+  },
+  {
+    "name": "SQL Server",
+    "level": "intermediate",
+    "firstContact": 2012,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/sql-server.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/sql-server.md",
+      "sourceFileName": "sql-server.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/sql-server"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "sql-server",
+    "url": "/skills/sql-server"
+  },
+  {
+    "name": "SQL",
+    "level": "advanced",
+    "firstContact": 2003,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/sql.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/sql.md",
+      "sourceFileName": "sql.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/sql"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "sql",
+    "url": "/skills/sql"
+  },
+  {
+    "name": "Strapi",
+    "level": "intermediate",
+    "firstContact": 2022,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/strapi.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/strapi.md",
+      "sourceFileName": "strapi.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/strapi"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "strapi",
+    "url": "/skills/strapi"
+  },
+  {
+    "name": "Tan Stack Query",
+    "level": "intermediate",
+    "firstContact": 2022,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/tan-stack-query.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/tan-stack-query.md",
+      "sourceFileName": "tan-stack-query.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/tan-stack-query"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "tan-stack-query",
+    "url": "/skills/tan-stack-query"
+  },
+  {
+    "name": "Thymeleaf",
+    "level": "intermediate",
+    "firstContact": 2023,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/thymeleaf.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/thymeleaf.md",
+      "sourceFileName": "thymeleaf.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/thymeleaf"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "thymeleaf",
+    "url": "/skills/thymeleaf"
+  },
+  {
+    "name": "Trello",
+    "level": "intermediate",
+    "firstContact": 2017,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/trello.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/trello.md",
+      "sourceFileName": "trello.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/trello"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "trello",
+    "url": "/skills/trello"
+  },
+  {
+    "name": "Typescript",
+    "level": "advanced",
+    "firstContact": 2022,
+    "body": {
+      "raw": "",
+      "html": ""
+    },
+    "_id": "skills/pt/typescript.md",
+    "_raw": {
+      "sourceFilePath": "skills/pt/typescript.md",
+      "sourceFileName": "typescript.md",
+      "sourceFileDir": "skills/pt",
+      "contentType": "markdown",
+      "flattenedPath": "skills/pt/typescript"
+    },
+    "type": "Skill",
+    "locale": "pt",
+    "slug": "typescript",
+    "url": "/skills/typescript"
+  }
+]

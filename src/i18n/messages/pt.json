@@ -1,0 +1,195 @@
+{
+    "nav": {
+        "home": "Início",
+        "blog": "Blog",
+        "projects": "Projetos",
+        "experiences": "Experiências",
+        "skills": "Habilidades",
+        "courses": "Cursos",
+        "services": "Serviços",
+        "presentations": "Apresentações",
+        "publications": "Publicações",
+        "search": "Buscar",
+        "contact": "Contato"
+    },
+    "common": {
+        "readMore": "Ler mais",
+        "viewAll": "Ver todos",
+        "viewProject": "Ver projeto",
+        "viewRepository": "Ver repositório",
+        "loading": "Carregando...",
+        "noResults": "Nenhum resultado encontrado.",
+        "back": "Voltar",
+        "next": "Próximo",
+        "previous": "Anterior",
+        "language": "Idioma",
+        "toggleTheme": "Alternar tema",
+        "lightMode": "Modo claro",
+        "darkMode": "Modo escuro",
+        "search": "Buscar",
+        "searchPlaceholder": "Pesquisar no site..."
+    },
+    "home": {
+        "title": "Início",
+        "hero": {
+            "greeting": "Olá, eu sou",
+            "cta": {
+                "resume": "Ver currículo",
+                "contact": "Entre em contato"
+            }
+        },
+        "featuredProjects": {
+            "title": "Projetos em destaque",
+            "subtitle": "Uma seleção dos meus melhores trabalhos"
+        },
+        "latestPosts": {
+            "title": "Últimas publicações",
+            "subtitle": "Artigos e tutoriais sobre desenvolvimento de software"
+        },
+        "experiences": {
+            "title": "Experiências",
+            "subtitle": "Minha trajetória profissional"
+        },
+        "services": {
+            "title": "Serviços",
+            "subtitle": "O que posso fazer por você"
+        },
+        "testimonials": {
+            "title": "Depoimentos",
+            "subtitle": "O que dizem sobre meu trabalho"
+        }
+    },
+    "blog": {
+        "title": "Blog",
+        "subtitle": "Artigos e tutoriais sobre desenvolvimento de software",
+        "readTime": "{minutes} min de leitura",
+        "postedOn": "Publicado em",
+        "by": "por",
+        "tags": "Tags",
+        "category": "Categoria",
+        "share": "Compartilhar"
+    },
+    "projects": {
+        "title": "Projetos",
+        "subtitle": "Uma seleção dos meus melhores trabalhos",
+        "viewProject": "Ver projeto",
+        "viewCode": "Ver código",
+        "tags": "Tecnologias"
+    },
+    "experiences": {
+        "title": "Experiências",
+        "subtitle": "Minha trajetória profissional",
+        "present": "Atual"
+    },
+    "skills": {
+        "title": "Habilidades",
+        "subtitle": "Tecnologias e ferramentas que utilizo",
+        "levels": {
+            "basic": "Básico",
+            "intermediate": "Intermediário",
+            "advanced": "Avançado",
+            "expert": "Especialista"
+        },
+        "since": "Desde {year}"
+    },
+    "courses": {
+        "title": "Cursos e Certificações",
+        "subtitle": "Aprendizado contínuo",
+        "workload": "{hours}h",
+        "certificate": "Ver certificado",
+        "courseLink": "Ver curso"
+    },
+    "services": {
+        "title": "Serviços",
+        "subtitle": "O que posso fazer por você"
+    },
+    "presentations": {
+        "title": "Apresentações",
+        "subtitle": "Palestras e workshops que ministrei",
+        "viewSlides": "Ver slides",
+        "viewVideo": "Ver vídeo"
+    },
+    "publications": {
+        "title": "Publicações",
+        "subtitle": "Artigos, livros e outros materiais publicados",
+        "viewPublication": "Ver publicação",
+        "types": {
+            "article": "Artigo",
+            "book": "Livro",
+            "paper": "Paper",
+            "tutorial": "Tutorial",
+            "other": "Outro"
+        }
+    },
+    "search": {
+        "title": "Buscar",
+        "subtitle": "Pesquise em todo o conteúdo do site",
+        "placeholder": "Pesquisar...",
+        "results": "{count} resultado(s) encontrado(s)",
+        "noResults": "Nenhum resultado para \"{query}\"",
+        "searching": "Buscando..."
+    },
+    "contact": {
+        "title": "Contato",
+        "subtitle": "Vamos conversar!",
+        "name": "Nome",
+        "email": "Email",
+        "message": "Mensagem",
+        "send": "Enviar mensagem",
+        "github": "GitHub",
+        "linkedin": "LinkedIn",
+        "twitter": "Twitter",
+        "noLinks": "Nenhum link de contato configurado."
+    },
+    "footer": {
+        "rights": "Todos os direitos reservados.",
+        "madeWith": "Feito com",
+        "by": "por"
+    },
+    "metadata": {
+        "home": {
+            "title": "Início",
+            "description": "Site pessoal e portfólio"
+        },
+        "blog": {
+            "title": "Blog",
+            "description": "Artigos e tutoriais sobre desenvolvimento de software"
+        },
+        "projects": {
+            "title": "Projetos",
+            "description": "Projetos de desenvolvimento de software"
+        },
+        "experiences": {
+            "title": "Experiências",
+            "description": "Trajetória profissional"
+        },
+        "skills": {
+            "title": "Habilidades",
+            "description": "Tecnologias e ferramentas"
+        },
+        "courses": {
+            "title": "Cursos",
+            "description": "Cursos e certificações"
+        },
+        "services": {
+            "title": "Serviços",
+            "description": "Serviços oferecidos"
+        },
+        "presentations": {
+            "title": "Apresentações",
+            "description": "Palestras e workshops"
+        },
+        "publications": {
+            "title": "Publicações",
+            "description": "Artigos e outros materiais publicados"
+        },
+        "search": {
+            "title": "Buscar",
+            "description": "Pesquise no site"
+        },
+        "contact": {
+            "title": "Contato",
+            "description": "Entre em contato"
+        }
+    }
+}

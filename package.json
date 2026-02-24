@@ -4,7 +4,7 @@
     "private": true,
     "scripts": {
         "dev": "concurrently \"contentlayer2 dev\" \"next dev -p 3600 --webpack\"",
-        "build": "contentlayer2 build && next build",
+        "build": "contentlayer2 build && next build --webpack",
         "postbuild": "next-sitemap",
         "start": "next start -p 3600",
         "lint": "eslint src",
@@ -12,9 +12,13 @@
         "format": "prettier . --write",
         "format:check": "prettier . --check",
         "format:all": "yarn format && yarn lint:fix",
+        "test": "vitest",
+        "test:ui": "vitest --ui",
+        "test:coverage": "vitest run --coverage",
         "info": "next info"
     },
     "dependencies": {
+        "@ducanh2912/next-pwa": "^10.2.9",
         "@emotion/react": "^11.14.0",
         "@emotion/styled": "^11.14.1",
         "@mdx-js/react": "^3.1.0",
@@ -34,6 +38,7 @@
         "next-sitemap": "^4.2.3",
         "react": "19.2.4",
         "react-dom": "19.2.4",
+        "react-markdown": "^10.1.0",
         "rehype-external-links": "^3.0.0",
         "rehype-prism-plus": "^2.0.0",
         "rehype-raw": "^7.0.0",
@@ -42,10 +47,15 @@
     },
     "devDependencies": {
         "@eslint/eslintrc": "^3.3.3",
+        "@testing-library/dom": "^10.4.1",
+        "@testing-library/jest-dom": "^6.9.1",
+        "@testing-library/react": "^16.3.2",
+        "@testing-library/user-event": "^14.6.1",
         "@types/lunr": "^2.3.6",
         "@types/node": "^25.3.0",
         "@types/react": "^19",
         "@types/react-dom": "^19",
+        "@vitejs/plugin-react": "^5.1.4",
         "concurrently": "^9.1.2",
         "eslint": "^9.39.3",
         "eslint-config-airbnb": "^19.0.4",
@@ -57,7 +67,9 @@
         "eslint-plugin-react": "^7.37.5",
         "eslint-plugin-react-hooks": "^7.0.1",
         "eslint-plugin-simple-import-sort": "^12.1.1",
+        "jsdom": "^28.1.0",
         "prettier": "^3.8.1",
-        "typescript": "^5"
+        "typescript": "^5",
+        "vitest": "^4.0.18"
     }
 }
