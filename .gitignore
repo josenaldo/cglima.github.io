@@ -18,7 +18,7 @@
 /out/
 
 # contentlayer
-/.contentlayer/
+.contentlayer
 
 # PWA generated files
 /public/sw.js
@@ -50,3 +50,4 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
