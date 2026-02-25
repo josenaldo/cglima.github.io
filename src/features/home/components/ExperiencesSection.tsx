@@ -1,8 +1,9 @@
 import Box from '@mui/material/Box'
 
 import { ExperienceTimeline } from '@/features/experiences'
-import Section from '@/ui/Section'
 import CallToAction from '@/ui/CallToAction'
+import Section from '@/ui/Section'
+
 import type { Experience } from 'contentlayer/generated'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -28,10 +29,7 @@ export default function ExperiencesSection({
 
     return (
         <Section title={title} subtitle={subtitle} maxWidth="md" background="paper">
-            <ExperienceTimeline
-                experiences={experiences}
-                presentLabel={presentLabel}
-            />
+            <ExperienceTimeline experiences={experiences} presentLabel={presentLabel} />
             <Box sx={{ textAlign: 'center', mt: 4 }}>
                 <CallToAction href="/experiences" variant="outlined">
                     {viewAllLabel}

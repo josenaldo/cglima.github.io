@@ -1,13 +1,14 @@
 'use client'
 
 import React from 'react'
-import { useTranslations } from 'next-intl'
-import { useRouter } from '@/i18n/navigation'
 
 import SearchIcon from '@mui/icons-material/Search'
 import IconButton from '@mui/material/IconButton'
 import InputAdornment from '@mui/material/InputAdornment'
 import OutlinedInput from '@mui/material/OutlinedInput'
+import { useTranslations } from 'next-intl'
+
+import { useRouter } from '@/i18n/navigation'
 
 // ─── Component ────────────────────────────────────────────────────────────────
 

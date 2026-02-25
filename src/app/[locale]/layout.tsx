@@ -1,9 +1,9 @@
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, setRequestLocale } from 'next-intl/server'
 
+import { routing } from '@/i18n/routing'
 import AppLayout from '@/layout/AppLayout'
 import ThemeRegistry from '@/layout/ThemeRegistry'
-import { routing } from '@/i18n/routing'
 
 // ─── Static params ────────────────────────────────────────────────────────────
 
@@ -18,10 +18,7 @@ interface LocaleLayoutProps {
     params: Promise<{ locale: string }>
 }
 
-export default async function LocaleLayout({
-    children,
-    params,
-}: LocaleLayoutProps) {
+export default async function LocaleLayout({ children, params }: LocaleLayoutProps) {
     const { locale } = await params
 
     setRequestLocale(locale)

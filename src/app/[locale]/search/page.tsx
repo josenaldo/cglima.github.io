@@ -1,14 +1,10 @@
-import { setRequestLocale, getTranslations } from 'next-intl/server'
-import type { Metadata } from 'next'
 import Container from '@mui/material/Container'
+import type { Metadata } from 'next'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 
-import { routing } from '@/i18n/routing'
-import {
-    buildSearchDocuments,
-    buildSearchMeta,
-    SearchResults,
-} from '@/features/search'
+import { buildSearchDocuments, buildSearchMeta, SearchResults } from '@/features/search'
 import SearchInput from '@/features/search/components/SearchInput'
+import { routing } from '@/i18n/routing'
 import Section from '@/ui/Section'
 
 // ─── Static params ────────────────────────────────────────────────────────────

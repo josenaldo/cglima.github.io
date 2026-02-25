@@ -1,6 +1,6 @@
 ---
 name: site-i18n
-description: "Internationalization (i18n) with next-intl and App Router static export. Use when adding/editing translations, adding a new locale, configuring locale routing, or fixing missing translation keys. This site supports pt (default) and en."
+description: 'Internationalization (i18n) with next-intl and App Router static export. Use when adding/editing translations, adding a new locale, configuring locale routing, or fixing missing translation keys. This site supports pt (default) and en.'
 ---
 
 # site-i18n

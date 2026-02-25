@@ -1,8 +1,9 @@
 import Box from '@mui/material/Box'
 
 import { ProjectList } from '@/features/projects'
-import Section from '@/ui/Section'
 import CallToAction from '@/ui/CallToAction'
+import Section from '@/ui/Section'
+
 import type { Project } from 'contentlayer/generated'
 
 // ─── Types ────────────────────────────────────────────────────────────────────

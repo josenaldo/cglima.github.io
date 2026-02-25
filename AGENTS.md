@@ -13,14 +13,14 @@ Leia `.github/instructions/README.md` antes de qualquer tarefa relevante.
 
 ## Comandos principais
 
-| Comando | Descrição |
-|---------|-----------|
-| `yarn dev` | Inicia Contentlayer2 watch + Next.js dev (porta 3600) |
-| `yarn build` | Build completo (Contentlayer2 + Next.js + sitemap) |
-| `yarn lint` | Lint do código em `src/` |
-| `yarn lint:fix` | Lint com correção automática |
-| `yarn format` | Formata todos os arquivos com Prettier |
-| `yarn format:all` | Formata e corrige lint |
+| Comando           | Descrição                                             |
+| ----------------- | ----------------------------------------------------- |
+| `yarn dev`        | Inicia Contentlayer2 watch + Next.js dev (porta 3600) |
+| `yarn build`      | Build completo (Contentlayer2 + Next.js + sitemap)    |
+| `yarn lint`       | Lint do código em `src/`                              |
+| `yarn lint:fix`   | Lint com correção automática                          |
+| `yarn format`     | Formata todos os arquivos com Prettier                |
+| `yarn format:all` | Formata e corrige lint                                |
 
 ## Stack
 

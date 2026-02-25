@@ -1,4 +1,5 @@
 import Image, { ImageProps } from 'next/image'
+
 import Box from '@mui/material/Box'
 
 // ─── Types ────────────────────────────────────────────────────────────────────

@@ -1,10 +1,11 @@
 import { notFound } from 'next/navigation'
-import { setRequestLocale } from 'next-intl/server'
-import type { Metadata } from 'next'
 
-import { routing } from '@/i18n/routing'
-import { getAllProjects, getProjectBySlug, ProjectDetail } from '@/features/projects'
+import type { Metadata } from 'next'
+import { setRequestLocale } from 'next-intl/server'
+
 import AppConfig from '@/config/AppConfig'
+import { getAllProjects, getProjectBySlug, ProjectDetail } from '@/features/projects'
+import { routing } from '@/i18n/routing'
 
 export function generateStaticParams() {
     return routing.locales.flatMap((locale) =>
@@ -26,9 +27,7 @@ export async function generateMetadata({
         openGraph: {
             title: project.title,
             description: project.description,
-            images: project.image
-                ? [{ url: `${AppConfig.siteUrl}${project.image}` }]
-                : [],
+            images: project.image ? [{ url: `${AppConfig.siteUrl}${project.image}` }] : [],
         },
     }
 }

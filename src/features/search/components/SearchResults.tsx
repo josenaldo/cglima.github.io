@@ -1,9 +1,8 @@
 'use client'
 
 import React from 'react'
-import lunr from 'lunr'
+
 import { useSearchParams } from 'next/navigation'
-import { useTranslations } from 'next-intl'
 
 import Box from '@mui/material/Box'
 import Card from '@mui/material/Card'
@@ -12,8 +11,11 @@ import CardContent from '@mui/material/CardContent'
 import Chip from '@mui/material/Chip'
 import CircularProgress from '@mui/material/CircularProgress'
 import Typography from '@mui/material/Typography'
+import lunr from 'lunr'
+import { useTranslations } from 'next-intl'
 
 import { Link } from '@/i18n/navigation'
+
 import type { SearchDocument, SearchDocumentMeta } from '../api/search'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -25,10 +27,7 @@ interface SearchResultsProps {
 
 // ─── Inner component (uses useSearchParams – needs Suspense boundary) ─────────
 
-function SearchResultsInner({
-    documents,
-    meta,
-}: SearchResultsProps) {
+function SearchResultsInner({ documents, meta }: SearchResultsProps) {
     const t = useTranslations('search')
     const searchParams = useSearchParams()
     const query = searchParams.get('q') ?? ''

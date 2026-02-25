@@ -7,8 +7,9 @@ import Container from '@mui/material/Container'
 import Stack from '@mui/material/Stack'
 import Typography from '@mui/material/Typography'
 
-import type { Project } from 'contentlayer/generated'
 import { MDXContent } from '@/features/content'
+
+import type { Project } from 'contentlayer/generated'
 
 // ─── Component ────────────────────────────────────────────────────────────────
 
@@ -45,7 +46,13 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
             {project.tags && project.tags.length > 0 && (
                 <Stack direction="row" spacing={1} flexWrap="wrap" useFlexGap sx={{ my: 2 }}>
                     {project.tags.map((tag) => (
-                        <Chip key={tag} label={tag} size="small" color="primary" variant="outlined" />
+                        <Chip
+                            key={tag}
+                            label={tag}
+                            size="small"
+                            color="primary"
+                            variant="outlined"
+                        />
                     ))}
                 </Stack>
             )}

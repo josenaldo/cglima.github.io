@@ -53,8 +53,7 @@ export const Post = defineDocumentType(() => ({
         },
         url: {
             type: 'string',
-            resolve: (doc) =>
-                `/blog/${resolveLocalizedSlug(doc._raw.flattenedPath)}`,
+            resolve: (doc) => `/blog/${resolveLocalizedSlug(doc._raw.flattenedPath)}`,
         },
     },
 }))
@@ -81,8 +80,7 @@ export const Page = defineDocumentType(() => ({
         },
         url: {
             type: 'string',
-            resolve: (doc) =>
-                `/${resolveLocalizedSlug(doc._raw.flattenedPath)}`,
+            resolve: (doc) => `/${resolveLocalizedSlug(doc._raw.flattenedPath)}`,
         },
     },
 }))
@@ -114,8 +112,7 @@ export const Project = defineDocumentType(() => ({
         },
         url: {
             type: 'string',
-            resolve: (doc) =>
-                `/projects/${resolveLocalizedSlug(doc._raw.flattenedPath)}`,
+            resolve: (doc) => `/projects/${resolveLocalizedSlug(doc._raw.flattenedPath)}`,
         },
     },
 }))
@@ -146,8 +143,7 @@ export const Experience = defineDocumentType(() => ({
         },
         url: {
             type: 'string',
-            resolve: (doc) =>
-                `/experiences/${resolveLocalizedSlug(doc._raw.flattenedPath)}`,
+            resolve: (doc) => `/experiences/${resolveLocalizedSlug(doc._raw.flattenedPath)}`,
         },
     },
 }))
@@ -180,8 +176,7 @@ export const Skill = defineDocumentType(() => ({
         },
         url: {
             type: 'string',
-            resolve: (doc) =>
-                `/skills/${resolveLocalizedSlug(doc._raw.flattenedPath)}`,
+            resolve: (doc) => `/skills/${resolveLocalizedSlug(doc._raw.flattenedPath)}`,
         },
     },
 }))
@@ -211,8 +206,7 @@ export const Course = defineDocumentType(() => ({
         },
         url: {
             type: 'string',
-            resolve: (doc) =>
-                `/courses/${resolveLocalizedSlug(doc._raw.flattenedPath)}`,
+            resolve: (doc) => `/courses/${resolveLocalizedSlug(doc._raw.flattenedPath)}`,
         },
     },
 }))
@@ -289,8 +283,7 @@ export const Presentation = defineDocumentType(() => ({
         },
         url: {
             type: 'string',
-            resolve: (doc) =>
-                `/presentations/${resolveLocalizedSlug(doc._raw.flattenedPath)}`,
+            resolve: (doc) => `/presentations/${resolveLocalizedSlug(doc._raw.flattenedPath)}`,
         },
     },
 }))

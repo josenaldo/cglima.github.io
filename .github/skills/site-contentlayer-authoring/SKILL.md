@@ -75,123 +75,123 @@ Fonte: `contentlayer.config.ts`. O `locale` é **sempre computado** do caminho.
 
 ### Post (`content/blog/{locale}/**/*.md`)
 
-| Campo | Tipo | Obrigatório |
-|-------|------|-------------|
-| `title` | string | ✓ |
-| `description` | string | ✓ |
-| `date` | date (ISO) | ✓ |
-| `author` | string | ✓ |
-| `category` | string | ✓ |
-| `image` | string | ✓ |
-| `draft` | boolean | - |
-| `tags` | string[] | - |
+| Campo         | Tipo       | Obrigatório |
+| ------------- | ---------- | ----------- |
+| `title`       | string     | ✓           |
+| `description` | string     | ✓           |
+| `date`        | date (ISO) | ✓           |
+| `author`      | string     | ✓           |
+| `category`    | string     | ✓           |
+| `image`       | string     | ✓           |
+| `draft`       | boolean    | -           |
+| `tags`        | string[]   | -           |
 
 URL computada: `/blog/{slug}`
 
 ### Page (`content/pages/{locale}/**/*.md`)
 
-| Campo | Tipo | Obrigatório |
-|-------|------|-------------|
-| `title` | string | ✓ |
-| `description` | string | ✓ |
-| `image` | string | ✓ |
+| Campo         | Tipo   | Obrigatório |
+| ------------- | ------ | ----------- |
+| `title`       | string | ✓           |
+| `description` | string | ✓           |
+| `image`       | string | ✓           |
 
 URL computada: `/{slug}` (ex.: `pages/pt/about.md` → `/about`)
 
 ### Project (`content/projects/{locale}/**/*.md`)
 
-| Campo | Tipo | Obrigatório |
-|-------|------|-------------|
-| `id` | number | ✓ |
-| `title` | string | ✓ |
-| `description` | string | ✓ |
-| `pin` | boolean | ✓ |
-| `image` | string | ✓ |
-| `projectUrl` | string | - |
-| `repositoryUrl` | string | - |
-| `tags` | string[] | - |
+| Campo           | Tipo     | Obrigatório |
+| --------------- | -------- | ----------- |
+| `id`            | number   | ✓           |
+| `title`         | string   | ✓           |
+| `description`   | string   | ✓           |
+| `pin`           | boolean  | ✓           |
+| `image`         | string   | ✓           |
+| `projectUrl`    | string   | -           |
+| `repositoryUrl` | string   | -           |
+| `tags`          | string[] | -           |
 
 ### Experience (`content/experiences/{locale}/**/*.md`)
 
-| Campo | Tipo | Obrigatório |
-|-------|------|-------------|
-| `id` | number | ✓ |
-| `title` | string | ✓ |
-| `company` | string | ✓ |
-| `location` | string | ✓ |
-| `description` | string | ✓ |
-| `period` | string | ✓ |
-| `show` | boolean | ✓ |
+| Campo         | Tipo    | Obrigatório |
+| ------------- | ------- | ----------- |
+| `id`          | number  | ✓           |
+| `title`       | string  | ✓           |
+| `company`     | string  | ✓           |
+| `location`    | string  | ✓           |
+| `description` | string  | ✓           |
+| `period`      | string  | ✓           |
+| `show`        | boolean | ✓           |
 
 ### Skill (`content/skills/{locale}/**/*.md`)
 
-| Campo | Tipo | Obrigatório |
-|-------|------|-------------|
-| `name` | string | ✓ |
-| `level` | `basic`/`intermediate`/`advanced`/`expert` | ✓ |
-| `firstContact` | number (ano) | ✓ |
-| `category` | string | - |
-| `icon` | string | - |
+| Campo          | Tipo                                       | Obrigatório |
+| -------------- | ------------------------------------------ | ----------- |
+| `name`         | string                                     | ✓           |
+| `level`        | `basic`/`intermediate`/`advanced`/`expert` | ✓           |
+| `firstContact` | number (ano)                               | ✓           |
+| `category`     | string                                     | -           |
+| `icon`         | string                                     | -           |
 
 ### Course (`content/courses/{locale}/**/*.md`)
 
-| Campo | Tipo | Obrigatório |
-|-------|------|-------------|
-| `name` | string | ✓ |
-| `institution` | string | ✓ |
-| `completionDate` | date (ISO) | ✓ |
-| `workload` | number (horas) | ✓ |
-| `courseLink` | string | - |
-| `certificateLink` | string | - |
+| Campo             | Tipo           | Obrigatório |
+| ----------------- | -------------- | ----------- |
+| `name`            | string         | ✓           |
+| `institution`     | string         | ✓           |
+| `completionDate`  | date (ISO)     | ✓           |
+| `workload`        | number (horas) | ✓           |
+| `courseLink`      | string         | -           |
+| `certificateLink` | string         | -           |
 
 ### Testimonial (`content/testimonials/{locale}/**/*.md`)
 
-| Campo | Tipo | Obrigatório |
-|-------|------|-------------|
-| `name` | string | ✓ |
-| `position` | string | ✓ |
-| `testimonial` | string | ✓ |
-| `image` | string | ✓ |
-| `company` | string | - |
-| `show` | boolean | - |
+| Campo         | Tipo    | Obrigatório |
+| ------------- | ------- | ----------- |
+| `name`        | string  | ✓           |
+| `position`    | string  | ✓           |
+| `testimonial` | string  | ✓           |
+| `image`       | string  | ✓           |
+| `company`     | string  | -           |
+| `show`        | boolean | -           |
 
 ### Service (`content/services/{locale}/**/*.md`)
 
-| Campo | Tipo | Obrigatório |
-|-------|------|-------------|
-| `order` | number | ✓ |
-| `title` | string | ✓ |
-| `description` | string | ✓ |
-| `image` | string | ✓ |
-| `icon` | string | ✓ |
-| `show` | boolean | - |
+| Campo         | Tipo    | Obrigatório |
+| ------------- | ------- | ----------- |
+| `order`       | number  | ✓           |
+| `title`       | string  | ✓           |
+| `description` | string  | ✓           |
+| `image`       | string  | ✓           |
+| `icon`        | string  | ✓           |
+| `show`        | boolean | -           |
 
 ### Presentation (`content/presentations/{locale}/**/*.md`)
 
-| Campo | Tipo | Obrigatório |
-|-------|------|-------------|
-| `title` | string | ✓ |
-| `description` | string | ✓ |
-| `date` | date (ISO) | ✓ |
-| `event` | string | ✓ |
-| `location` | string | - |
-| `slidesUrl` | string | - |
-| `videoUrl` | string | - |
-| `image` | string | - |
-| `show` | boolean | - |
+| Campo         | Tipo       | Obrigatório |
+| ------------- | ---------- | ----------- |
+| `title`       | string     | ✓           |
+| `description` | string     | ✓           |
+| `date`        | date (ISO) | ✓           |
+| `event`       | string     | ✓           |
+| `location`    | string     | -           |
+| `slidesUrl`   | string     | -           |
+| `videoUrl`    | string     | -           |
+| `image`       | string     | -           |
+| `show`        | boolean    | -           |
 
 ### Publication (`content/publications/{locale}/**/*.md`)
 
-| Campo | Tipo | Obrigatório |
-|-------|------|-------------|
-| `title` | string | ✓ |
-| `description` | string | ✓ |
-| `date` | date (ISO) | ✓ |
-| `publisher` | string | ✓ |
-| `type` | `article`/`book`/`paper`/`tutorial`/`other` | ✓ |
-| `url` | string | - |
-| `image` | string | - |
-| `show` | boolean | - |
+| Campo         | Tipo                                        | Obrigatório |
+| ------------- | ------------------------------------------- | ----------- |
+| `title`       | string                                      | ✓           |
+| `description` | string                                      | ✓           |
+| `date`        | date (ISO)                                  | ✓           |
+| `publisher`   | string                                      | ✓           |
+| `type`        | `article`/`book`/`paper`/`tutorial`/`other` | ✓           |
+| `url`         | string                                      | -           |
+| `image`       | string                                      | -           |
+| `show`        | boolean                                     | -           |
 
 ## Workflow (faça em ordem)
 

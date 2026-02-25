@@ -1,4 +1,4 @@
-import { allPosts, allProjects, allPages } from 'contentlayer/generated'
+import { allPages, allPosts, allProjects } from 'contentlayer/generated'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -66,17 +66,14 @@ export function buildSearchDocuments(locale?: string): SearchDocument[] {
 export type SearchDocumentMeta = Omit<SearchDocument, 'content'>
 
 export function buildSearchMeta(locale?: string): Record<string, SearchDocumentMeta> {
-    return buildSearchDocuments(locale).reduce<Record<string, SearchDocumentMeta>>(
-        (acc, doc) => {
-            acc[doc.url] = {
-                url: doc.url,
-                title: doc.title,
-                description: doc.description,
-                type: doc.type,
-                locale: doc.locale,
-            }
-            return acc
-        },
-        {}
-    )
+    return buildSearchDocuments(locale).reduce<Record<string, SearchDocumentMeta>>((acc, doc) => {
+        acc[doc.url] = {
+            url: doc.url,
+            title: doc.title,
+            description: doc.description,
+            type: doc.type,
+            locale: doc.locale,
+        }
+        return acc
+    }, {})
 }

@@ -4,16 +4,16 @@ export { isType } from 'contentlayer2/client'
 
 // NOTE During development Contentlayer imports from `.mjs` files to improve HMR speeds.
 // During (production) builds Contentlayer it imports from `.json` files to improve build performance.
-import allPosts from './Post/_index.json' with { type: 'json' }
-import allPages from './Page/_index.json' with { type: 'json' }
-import allProjects from './Project/_index.json' with { type: 'json' }
-import allExperiences from './Experience/_index.json' with { type: 'json' }
-import allSkills from './Skill/_index.json' with { type: 'json' }
-import allCourses from './Course/_index.json' with { type: 'json' }
-import allTestimonials from './Testimonial/_index.json' with { type: 'json' }
-import allServices from './Service/_index.json' with { type: 'json' }
-import allPresentations from './Presentation/_index.json' with { type: 'json' }
-import allPublications from './Publication/_index.json' with { type: 'json' }
+import { allPosts } from './Post/_index.mjs'
+import { allPages } from './Page/_index.mjs'
+import { allProjects } from './Project/_index.mjs'
+import { allExperiences } from './Experience/_index.mjs'
+import { allSkills } from './Skill/_index.mjs'
+import { allCourses } from './Course/_index.mjs'
+import { allTestimonials } from './Testimonial/_index.mjs'
+import { allServices } from './Service/_index.mjs'
+import { allPresentations } from './Presentation/_index.mjs'
+import { allPublications } from './Publication/_index.mjs'
 
 export { allPosts, allPages, allProjects, allExperiences, allSkills, allCourses, allTestimonials, allServices, allPresentations, allPublications }
 

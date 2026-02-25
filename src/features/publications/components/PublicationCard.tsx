@@ -62,11 +62,7 @@ export default function PublicationCard({
                     {publication.publisher}
                 </Typography>
 
-                <Typography
-                    variant="body2"
-                    color="text.secondary"
-                    sx={{ mb: 2, lineHeight: 1.6 }}
-                >
+                <Typography variant="body2" color="text.secondary" sx={{ mb: 2, lineHeight: 1.6 }}>
                     {publication.description}
                 </Typography>
 

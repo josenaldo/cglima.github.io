@@ -40,12 +40,7 @@ export default function CallToAction({
     }
 
     return (
-        <AnyButton
-            variant={variant}
-            component={Link}
-            href={href}
-            {...rest}
-        >
+        <AnyButton variant={variant} component={Link} href={href} {...rest}>
             {children}
         </AnyButton>
     )

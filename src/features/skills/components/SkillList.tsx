@@ -1,6 +1,6 @@
 import Stack from '@mui/material/Stack'
 
-import type { SkillsByLevel, SkillLevel } from '../api/skills'
+import type { SkillLevel, SkillsByLevel } from '../api/skills'
 import SkillGroup from './SkillGroup'
 
 // ─── Component ────────────────────────────────────────────────────────────────

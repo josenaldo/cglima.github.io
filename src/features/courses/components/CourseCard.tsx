@@ -25,11 +25,9 @@ export default function CourseCard({
     workloadLabel = 'h',
 }: CourseCardProps) {
     const dateLocale = locale === 'pt' ? ptBR : undefined
-    const formattedDate = format(
-        new Date(course.completionDate),
-        'MMM yyyy',
-        { locale: dateLocale }
-    )
+    const formattedDate = format(new Date(course.completionDate), 'MMM yyyy', {
+        locale: dateLocale,
+    })
 
     return (
         <Paper

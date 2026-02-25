@@ -20,10 +20,7 @@ export function getAllProjectsPaths(locale?: string): string[] {
     return getAllProjects(locale).map((p) => p.url)
 }
 
-export function getProjectBySlug(
-    slug: string,
-    locale?: string
-): Project | undefined {
+export function getProjectBySlug(slug: string, locale?: string): Project | undefined {
     const url = `/projects/${slug}`
     return getAllProjects(locale).find((p) => p.url === url)
 }

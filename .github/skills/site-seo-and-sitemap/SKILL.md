@@ -1,6 +1,6 @@
 ---
 name: site-seo-and-sitemap
-description: "Maintain SEO metadata and sitemap/robots generation for this Next.js static site. Use when changing titles/descriptions/OG images, canonical URLs, NEXT_PUBLIC_SITE_URL, next-seo configuration, or when adding sitemap.xml/robots.txt via next-sitemap."
+description: 'Maintain SEO metadata and sitemap/robots generation for this Next.js static site. Use when changing titles/descriptions/OG images, canonical URLs, NEXT_PUBLIC_SITE_URL, next-seo configuration, or when adding sitemap.xml/robots.txt via next-sitemap.'
 ---
 
 # site-seo-and-sitemap
@@ -20,11 +20,11 @@ Guia prático para manter SEO consistente neste site estático com App Router.
 
 ## Arquivos-chave
 
-| Arquivo | Função |
-|---------|--------|
-| `src/config/SeoConfig.ts` | Defaults globais de SEO |
-| `src/config/AppConfig.ts` | URL base, nome do site, dono |
-| `next-sitemap.config.js` | Config do sitemap e robots |
+| Arquivo                                | Função                              |
+| -------------------------------------- | ----------------------------------- |
+| `src/config/SeoConfig.ts`              | Defaults globais de SEO             |
+| `src/config/AppConfig.ts`              | URL base, nome do site, dono        |
+| `next-sitemap.config.js`               | Config do sitemap e robots          |
 | `.env.development` / `.env.production` | `NEXT_PUBLIC_SITE_URL` por ambiente |
 
 ## Princípios e regras

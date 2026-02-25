@@ -1,11 +1,11 @@
 import { notFound } from 'next/navigation'
-import { setRequestLocale } from 'next-intl/server'
-import type { Metadata } from 'next'
 
-import { routing } from '@/i18n/routing'
-import { getAllPosts, getPostBySlug } from '@/features/blog'
-import { BlogPost } from '@/features/blog'
+import type { Metadata } from 'next'
+import { setRequestLocale } from 'next-intl/server'
+
 import AppConfig from '@/config/AppConfig'
+import { BlogPost, getAllPosts, getPostBySlug } from '@/features/blog'
+import { routing } from '@/i18n/routing'
 
 // ─── Static params ────────────────────────────────────────────────────────────
 
@@ -35,9 +35,7 @@ export async function generateMetadata({
         openGraph: {
             title: post.title,
             description: post.description,
-            images: post.image
-                ? [{ url: `${AppConfig.siteUrl}${post.image}` }]
-                : [],
+            images: post.image ? [{ url: `${AppConfig.siteUrl}${post.image}` }] : [],
         },
     }
 }

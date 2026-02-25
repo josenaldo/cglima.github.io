@@ -1,6 +1,6 @@
 ---
 name: site-content-image-generation
-description: "Generate cover images for blog posts, projects, pages, and other site content. Use when the user asks to generate, create, or update cover/OG images for content. Saves images near the content file (colocation) or in public/images/{type}/."
+description: 'Generate cover images for blog posts, projects, pages, and other site content. Use when the user asks to generate, create, or update cover/OG images for content. Saves images near the content file (colocation) or in public/images/{type}/.'
 ---
 
 # site-content-image-generation

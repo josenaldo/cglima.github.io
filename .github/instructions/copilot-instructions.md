@@ -1,9 +1,9 @@
 # Copilot instructions
 
 - Single source of truth:
-  - Skills live in `.github/skills/`.
-  - Rules live in `.github/instructions/`.
-  - Prompt templates live in `.github/prompts/`.
+    - Skills live in `.github/skills/`.
+    - Rules live in `.github/instructions/`.
+    - Prompt templates live in `.github/prompts/`.
 - Prefer repo-aware changes: update code/content in place, run `yarn build` when changing site/build-related files.
 - Contentlayer schema source of truth is `contentlayer.config.ts`.
 - Content files live under `content/{type}/**` (blog, projects, experiences, skills, courses, testimonials, services, presentations, publications, pages).

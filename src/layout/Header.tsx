@@ -3,11 +3,11 @@ import Container from '@mui/material/Container'
 import Toolbar from '@mui/material/Toolbar'
 
 import { navItems } from '@/config/navigation'
+import Logo from '@/ui/Logo'
 
 import DesktopMenu from './DesktopMenu'
 import MobileMenu from './MobileMenu'
 import ThemeToggle from './ThemeToggle'
-import Logo from '@/ui/Logo'
 
 // ─── Component ────────────────────────────────────────────────────────────────
 

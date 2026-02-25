@@ -1,4 +1,5 @@
 import { ContentView } from '@/features/content'
+
 import type { PostWithNav } from '../api/blog'
 
 // ─── Component ────────────────────────────────────────────────────────────────

@@ -1,9 +1,8 @@
-import { useTranslations } from 'next-intl'
-
 import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
 import Paper from '@mui/material/Paper'
 import Typography from '@mui/material/Typography'
+import { useTranslations } from 'next-intl'
 
 import AppConfig from '@/config/AppConfig'
 
@@ -14,15 +13,8 @@ export default function Footer() {
     const year = new Date().getFullYear()
 
     return (
-        <Box
-            component="footer"
-            sx={{ display: 'flex', width: '100%', mt: 'auto' }}
-        >
-            <Paper
-                elevation={1}
-                component="div"
-                sx={{ width: '100%', py: 3 }}
-            >
+        <Box component="footer" sx={{ display: 'flex', width: '100%', mt: 'auto' }}>
+            <Paper elevation={1} component="div" sx={{ width: '100%', py: 3 }}>
                 <Container maxWidth="xl">
                     <Box
                         sx={{

@@ -1,6 +1,7 @@
 import Grid from '@mui/material/Grid'
 
 import type { Post } from 'contentlayer/generated'
+
 import BlogCard from './BlogCard'
 
 // ─── Component ────────────────────────────────────────────────────────────────

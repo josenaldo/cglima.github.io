@@ -1,6 +1,7 @@
 import Stack from '@mui/material/Stack'
 
 import type { Course } from 'contentlayer/generated'
+
 import CourseCard from './CourseCard'
 
 interface CourseListProps {

@@ -1,8 +1,8 @@
-import { setRequestLocale, getTranslations } from 'next-intl/server'
 import type { Metadata } from 'next'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 
+import { CourseList, getAllCourses } from '@/features/courses'
 import { routing } from '@/i18n/routing'
-import { getAllCourses, CourseList } from '@/features/courses'
 import Section from '@/ui/Section'
 
 export function generateStaticParams() {

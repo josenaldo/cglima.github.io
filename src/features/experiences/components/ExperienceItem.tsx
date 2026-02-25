@@ -13,10 +13,7 @@ interface ExperienceItemProps {
     presentLabel?: string
 }
 
-export default function ExperienceItem({
-    experience,
-    presentLabel = 'Atual',
-}: ExperienceItemProps) {
+export default function ExperienceItem({ experience }: ExperienceItemProps) {
     return (
         <Paper
             elevation={2}

@@ -1,4 +1,6 @@
-import { describe, expect, it, vi, beforeEach } from 'vitest'
+import { describe, expect, it, vi } from 'vitest'
+
+import { getAllPosts, getAllPostsPaths, getPostBySlug, getSortedPosts } from '../../api/blog'
 
 // Mock contentlayer/generated before importing our modules
 vi.mock('contentlayer/generated', () => ({
@@ -57,13 +59,6 @@ vi.mock('contentlayer/generated', () => ({
         },
     ],
 }))
-
-import {
-    getAllPosts,
-    getAllPostsPaths,
-    getPostBySlug,
-    getSortedPosts,
-} from '../../api/blog'
 
 describe('blog api', () => {
     it('getAllPosts returns all posts when no locale filter', () => {

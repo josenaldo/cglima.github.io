@@ -1,7 +1,6 @@
 'use client'
 
 import React from 'react'
-import { useTranslations } from 'next-intl'
 
 import MenuIcon from '@mui/icons-material/Menu'
 import Box from '@mui/material/Box'
@@ -12,9 +11,10 @@ import ListItem from '@mui/material/ListItem'
 import ListItemButton from '@mui/material/ListItemButton'
 import ListItemIcon from '@mui/material/ListItemIcon'
 import ListItemText from '@mui/material/ListItemText'
+import { useTranslations } from 'next-intl'
 
-import { Link } from '@/i18n/navigation'
 import type { NavItem } from '@/config/navigation'
+import { Link } from '@/i18n/navigation'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -29,10 +29,7 @@ export default function MobileMenu({ items }: MobileMenuProps) {
     const [open, setOpen] = React.useState(false)
 
     return (
-        <Box
-            sx={{ display: { xs: 'flex', md: 'none' } }}
-            aria-label="mobile navigation"
-        >
+        <Box sx={{ display: { xs: 'flex', md: 'none' } }} aria-label="mobile navigation">
             <IconButton
                 size="large"
                 aria-label="open menu"
@@ -64,9 +61,7 @@ export default function MobileMenu({ items }: MobileMenuProps) {
                                         <Icon />
                                     </ListItemIcon>
                                     <ListItemText
-                                        primary={t(
-                                            item.key as Parameters<typeof t>[0]
-                                        )}
+                                        primary={t(item.key as Parameters<typeof t>[0])}
                                     />
                                 </ListItemButton>
                             </ListItem>

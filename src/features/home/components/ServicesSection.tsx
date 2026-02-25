@@ -1,5 +1,6 @@
 import { ServiceList } from '@/features/services'
 import Section from '@/ui/Section'
+
 import type { Service } from 'contentlayer/generated'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -12,11 +13,7 @@ interface ServicesSectionProps {
 
 // ─── Component ────────────────────────────────────────────────────────────────
 
-export default function ServicesSection({
-    services,
-    title,
-    subtitle,
-}: ServicesSectionProps) {
+export default function ServicesSection({ services, title, subtitle }: ServicesSectionProps) {
     if (services.length === 0) return null
 
     return (

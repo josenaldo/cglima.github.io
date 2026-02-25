@@ -2,7 +2,7 @@ import { act, render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { describe, expect, it } from 'vitest'
 
-import ThemeRegistry, { ColorModeContext, useColorMode } from '../ThemeRegistry'
+import ThemeRegistry, { useColorMode } from '../ThemeRegistry'
 
 // ─── Helper component to read context ────────────────────────────────────────
 
@@ -11,7 +11,9 @@ function ModeDisplay() {
     return (
         <div>
             <span data-testid="mode">{mode}</span>
-            <button onClick={toggleColorMode}>toggle</button>
+            <button type="button" onClick={toggleColorMode}>
+                toggle
+            </button>
         </div>
     )
 }

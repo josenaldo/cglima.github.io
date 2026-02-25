@@ -1,9 +1,9 @@
+import FormatQuoteIcon from '@mui/icons-material/FormatQuote'
 import Avatar from '@mui/material/Avatar'
 import Box from '@mui/material/Box'
 import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
 import Typography from '@mui/material/Typography'
-import FormatQuoteIcon from '@mui/icons-material/FormatQuote'
 
 import type { Testimonial } from 'contentlayer/generated'
 

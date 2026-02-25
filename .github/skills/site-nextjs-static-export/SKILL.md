@@ -39,12 +39,12 @@ Workflow e guardrails para build e deploy deste repo como site estático Next.js
 ## Decision Tree
 
 1. O deploy é "user page" (`cglima.github.io`) ou "project page" (`cglima.github.io/repo`)?
-   - User page → `basePath` vazio (padrão atual).
-   - Project page → adicionar `basePath` e ajustar links.
+    - User page → `basePath` vazio (padrão atual).
+    - Project page → adicionar `basePath` e ajustar links.
 
 2. O erro é no CI ou só em produção?
-   - CI → focar em Node/cache/commands/env vars.
-   - Produção → focar em `NEXT_PUBLIC_SITE_URL`, caminhos absolutos, sitemap, assets.
+    - CI → focar em Node/cache/commands/env vars.
+    - Produção → focar em `NEXT_PUBLIC_SITE_URL`, caminhos absolutos, sitemap, assets.
 
 ## Workflow (faça em ordem)
 

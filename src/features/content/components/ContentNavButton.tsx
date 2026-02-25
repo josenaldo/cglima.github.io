@@ -1,11 +1,12 @@
 'use client'
 
+import NextLink from 'next/link'
+
 import ArrowBackIcon from '@mui/icons-material/ArrowBack'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
-import NextLink from 'next/link'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -46,7 +47,6 @@ export default function ContentNavButton({
             }}
         >
             {previous ? (
-                // eslint-disable-next-line @typescript-eslint/no-explicit-any
                 <Button
                     component={NextLink as any}
                     href={`${prefix}${previous.url}`}
@@ -67,7 +67,6 @@ export default function ContentNavButton({
             )}
 
             {next ? (
-                // eslint-disable-next-line @typescript-eslint/no-explicit-any
                 <Button
                     component={NextLink as any}
                     href={`${prefix}${next.url}`}
@@ -78,9 +77,7 @@ export default function ContentNavButton({
                         <Typography variant="caption" color="text.secondary">
                             {nextLabel}
                         </Typography>
-                        {next.title && (
-                            <Typography variant="body2">{next.title}</Typography>
-                        )}
+                        {next.title && <Typography variant="body2">{next.title}</Typography>}
                     </Box>
                 </Button>
             ) : (

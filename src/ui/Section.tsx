@@ -1,7 +1,7 @@
 import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
-import Typography from '@mui/material/Typography'
 import type { SxProps, Theme } from '@mui/material/styles'
+import Typography from '@mui/material/Typography'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -49,10 +49,7 @@ export default function Section({
                             </Typography>
                         )}
                         {subtitle && (
-                            <Typography
-                                variant="subtitle1"
-                                color="text.secondary"
-                            >
+                            <Typography variant="subtitle1" color="text.secondary">
                                 {subtitle}
                             </Typography>
                         )}

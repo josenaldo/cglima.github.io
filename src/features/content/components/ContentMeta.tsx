@@ -47,17 +47,11 @@ export default function ContentMeta({
                 </Typography>
             )}
 
-            {author && (
-                <Typography variant="caption">• {author}</Typography>
-            )}
+            {author && <Typography variant="caption">• {author}</Typography>}
 
-            {readingTime && (
-                <Typography variant="caption">• {readingTime} min</Typography>
-            )}
+            {readingTime && <Typography variant="caption">• {readingTime} min</Typography>}
 
-            {category && (
-                <Chip label={category} size="small" variant="outlined" />
-            )}
+            {category && <Chip label={category} size="small" variant="outlined" />}
 
             {tags?.map((tag) => (
                 <Chip key={tag} label={tag} size="small" color="primary" variant="outlined" />

@@ -13,11 +13,7 @@ interface SkillGroupProps {
     skills: Skill[]
 }
 
-export default function SkillGroup({
-    level,
-    levelLabel,
-    skills,
-}: SkillGroupProps) {
+export default function SkillGroup({ levelLabel, skills }: SkillGroupProps) {
     if (skills.length === 0) return null
 
     return (

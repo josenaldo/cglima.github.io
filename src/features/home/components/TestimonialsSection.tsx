@@ -2,6 +2,7 @@ import Grid from '@mui/material/Grid'
 
 import { TestimonialCard } from '@/features/testimonials'
 import Section from '@/ui/Section'
+
 import type { Testimonial } from 'contentlayer/generated'
 
 // ─── Types ────────────────────────────────────────────────────────────────────

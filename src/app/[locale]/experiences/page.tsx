@@ -1,8 +1,8 @@
-import { setRequestLocale, getTranslations } from 'next-intl/server'
 import type { Metadata } from 'next'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 
+import { ExperienceTimeline, getVisibleExperiences } from '@/features/experiences'
 import { routing } from '@/i18n/routing'
-import { getVisibleExperiences, ExperienceTimeline } from '@/features/experiences'
 import Section from '@/ui/Section'
 
 export function generateStaticParams() {
@@ -32,10 +32,7 @@ export default async function ExperiencesPage({ params }: ExperiencesPageProps) 
 
     return (
         <Section title={t('title')} subtitle={t('subtitle')} maxWidth="md">
-            <ExperienceTimeline
-                experiences={experiences}
-                presentLabel={t('present')}
-            />
+            <ExperienceTimeline experiences={experiences} presentLabel={t('present')} />
         </Section>
     )
 }

@@ -1,6 +1,7 @@
 import Grid from '@mui/material/Grid'
 
 import type { Service } from 'contentlayer/generated'
+
 import ServiceCard from './ServiceCard'
 
 interface ServiceListProps {

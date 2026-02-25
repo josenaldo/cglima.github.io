@@ -1,6 +1,7 @@
 import Grid from '@mui/material/Grid'
 
 import type { Project } from 'contentlayer/generated'
+
 import ProjectCard from './ProjectCard'
 
 // ─── Component ────────────────────────────────────────────────────────────────

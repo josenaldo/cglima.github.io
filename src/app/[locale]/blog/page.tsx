@@ -1,11 +1,9 @@
-import { setRequestLocale } from 'next-intl/server'
-import { getTranslations } from 'next-intl/server'
-import type { Metadata } from 'next'
 import Container from '@mui/material/Container'
+import type { Metadata } from 'next'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 
+import { BlogList, getSortedPosts } from '@/features/blog'
 import { routing } from '@/i18n/routing'
-import { getSortedPosts } from '@/features/blog'
-import { BlogList } from '@/features/blog'
 import Section from '@/ui/Section'
 
 // ─── Static params ────────────────────────────────────────────────────────────

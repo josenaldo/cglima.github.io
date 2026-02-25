@@ -10,13 +10,12 @@ import CallToAction from '@/ui/CallToAction'
 
 interface HeroProps {
     greeting: string
-    resumeLabel: string
     contactLabel: string
 }
 
 // ─── Component ────────────────────────────────────────────────────────────────
 
-export default function Hero({ greeting, resumeLabel, contactLabel }: HeroProps) {
+export default function Hero({ greeting, contactLabel }: HeroProps) {
     return (
         <Box
             component="section"
@@ -30,29 +29,15 @@ export default function Hero({ greeting, resumeLabel, contactLabel }: HeroProps)
         >
             <Container maxWidth="lg">
                 <Box sx={{ maxWidth: 700 }}>
-                    <Typography
-                        variant="h6"
-                        color="primary"
-                        sx={{ fontWeight: 500, mb: 1 }}
-                    >
+                    <Typography variant="h6" color="primary" sx={{ fontWeight: 500, mb: 1 }}>
                         {greeting}
                     </Typography>
 
-                    <Typography
-                        variant="h2"
-                        component="h1"
-                        fontWeight={700}
-                        sx={{ mb: 1 }}
-                    >
+                    <Typography variant="h2" component="h1" fontWeight={700} sx={{ mb: 1 }}>
                         {AppConfig.owner.name}
                     </Typography>
 
-                    <Typography
-                        variant="h4"
-                        color="text.secondary"
-                        fontWeight={400}
-                        sx={{ mb: 3 }}
-                    >
+                    <Typography variant="h4" color="text.secondary" fontWeight={400} sx={{ mb: 3 }}>
                         {AppConfig.owner.title}
                     </Typography>
 
@@ -61,11 +46,7 @@ export default function Hero({ greeting, resumeLabel, contactLabel }: HeroProps)
                             {contactLabel}
                         </CallToAction>
                         {AppConfig.owner.github && (
-                            <CallToAction
-                                href={AppConfig.owner.github}
-                                variant="outlined"
-                                external
-                            >
+                            <CallToAction href={AppConfig.owner.github} variant="outlined" external>
                                 GitHub
                             </CallToAction>
                         )}

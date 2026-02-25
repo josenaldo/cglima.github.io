@@ -1,5 +1,6 @@
-import type { Post } from 'contentlayer/generated'
 import { ContentCard } from '@/features/content'
+
+import type { Post } from 'contentlayer/generated'
 
 // ─── Component ────────────────────────────────────────────────────────────────
 

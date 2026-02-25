@@ -1,7 +1,8 @@
 import type { Metadata, Viewport } from 'next'
 
-import './globals.css'
 import AppConfig from '@/config/AppConfig'
+
+import './globals.css'
 
 export const metadata: Metadata = {
     title: {
@@ -35,14 +36,10 @@ export default function RootLayout({
     children: React.ReactNode
 }>) {
     return (
-        <html suppressHydrationWarning>
+        <html lang={AppConfig.defaultLocale} suppressHydrationWarning>
             <head>
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link
-                    rel="preconnect"
-                    href="https://fonts.gstatic.com"
-                    crossOrigin="anonymous"
-                />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
                 <link
                     rel="stylesheet"
                     href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"

@@ -1,16 +1,16 @@
 'use client'
 
 import React from 'react'
-import ReactMarkdown, { type Components } from 'react-markdown'
-import rehypeExternalLinks from 'rehype-external-links'
-import rehypePrism from 'rehype-prism-plus'
-import rehypeRaw from 'rehype-raw'
-import remarkGfm from 'remark-gfm'
 
 import Box from '@mui/material/Box'
 import Divider from '@mui/material/Divider'
 import MuiLink from '@mui/material/Link'
 import Typography from '@mui/material/Typography'
+import ReactMarkdown, { type Components } from 'react-markdown'
+import rehypeExternalLinks from 'rehype-external-links'
+import rehypePrism from 'rehype-prism-plus'
+import rehypeRaw from 'rehype-raw'
+import remarkGfm from 'remark-gfm'
 
 // ─── Custom components ────────────────────────────────────────────────────────
 
@@ -157,7 +157,6 @@ const markdownComponents: Components = {
 
     // Image
     img: ({ src, alt, ...props }) => (
-        // eslint-disable-next-line @next/next/no-img-element
         <Box
             component="img"
             src={src}

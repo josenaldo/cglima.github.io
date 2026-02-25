@@ -1,8 +1,9 @@
 import Box from '@mui/material/Box'
 
 import { BlogList } from '@/features/blog'
-import Section from '@/ui/Section'
 import CallToAction from '@/ui/CallToAction'
+import Section from '@/ui/Section'
+
 import type { Post } from 'contentlayer/generated'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -16,12 +17,7 @@ interface LatestPostsProps {
 
 // ─── Component ────────────────────────────────────────────────────────────────
 
-export default function LatestPosts({
-    posts,
-    title,
-    subtitle,
-    viewAllLabel,
-}: LatestPostsProps) {
+export default function LatestPosts({ posts, title, subtitle, viewAllLabel }: LatestPostsProps) {
     if (posts.length === 0) return null
 
     return (

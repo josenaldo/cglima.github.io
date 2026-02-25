@@ -18,33 +18,17 @@ interface LinkProps extends Omit<MuiLinkProps, 'href'> {
 
 // ─── Component ────────────────────────────────────────────────────────────────
 
-export default function Link({
-    href,
-    locale,
-    external,
-    children,
-    ...rest
-}: LinkProps) {
+export default function Link({ href, locale, external, children, ...rest }: LinkProps) {
     if (external) {
         return (
-            <MuiLink
-                href={href as string}
-                target="_blank"
-                rel="noopener noreferrer"
-                {...rest}
-            >
+            <MuiLink href={href as string} target="_blank" rel="noopener noreferrer" {...rest}>
                 {children}
             </MuiLink>
         )
     }
 
     return (
-        <MuiLink
-            component={IntlLink}
-            href={href}
-            locale={locale}
-            {...(rest as object)}
-        >
+        <MuiLink component={IntlLink} href={href} locale={locale} {...(rest as object)}>
             {children}
         </MuiLink>
     )

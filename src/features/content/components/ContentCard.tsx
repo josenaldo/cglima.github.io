@@ -9,6 +9,7 @@ import Stack from '@mui/material/Stack'
 import Typography from '@mui/material/Typography'
 
 import { Link } from '@/i18n/navigation'
+
 import ContentMeta from './ContentMeta'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -51,7 +52,7 @@ export default function ContentCard({
                 },
             }}
         >
-            {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
+            {}
             <CardActionArea component={Link as any} href={href} sx={{ flexGrow: 1 }}>
                 {image && (
                     <CardMedia
@@ -64,20 +65,10 @@ export default function ContentCard({
                 )}
                 <CardContent>
                     {category && (
-                        <Chip
-                            label={category}
-                            size="small"
-                            color="primary"
-                            sx={{ mb: 1 }}
-                        />
+                        <Chip label={category} size="small" color="primary" sx={{ mb: 1 }} />
                     )}
 
-                    <Typography
-                        variant="h6"
-                        component="h3"
-                        gutterBottom
-                        sx={{ fontWeight: 600 }}
-                    >
+                    <Typography variant="h6" component="h3" gutterBottom sx={{ fontWeight: 600 }}>
                         {title}
                     </Typography>
 
@@ -94,12 +85,7 @@ export default function ContentCard({
                         {description}
                     </Typography>
 
-                    <ContentMeta
-                        date={date}
-                        author={author}
-                        tags={tags}
-                        locale={locale}
-                    />
+                    <ContentMeta date={date} author={author} tags={tags} locale={locale} />
 
                     {tags && tags.length > 0 && (
                         <Stack direction="row" spacing={0.5} flexWrap="wrap" sx={{ mt: 1 }}>

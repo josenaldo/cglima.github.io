@@ -166,7 +166,7 @@ Consider what happens over five years of a production system:
 
 At no point did anyone decide to "swap Postgres for Oracle." Nobody planned to change the payment vendor. Nobody wanted to touch the authentication library. But the library touched them — because that's what software does. It rots.
 
-**Software rot** (sometimes called *bit rot* or *entropy*) is the gradual degradation of a system's operational environment while the code itself stays still. The surrounding world evolves: dependencies age, platforms shift, security requirements tighten. Code that worked in 2020 may fail in 2025 without a single intentional change.
+**Software rot** (sometimes called _bit rot_ or _entropy_) is the gradual degradation of a system's operational environment while the code itself stays still. The surrounding world evolves: dependencies age, platforms shift, security requirements tighten. Code that worked in 2020 may fail in 2025 without a single intentional change.
 
 This is precisely where abstractions and separation of concerns prove their worth beyond the "swap vendor" scenario.
 

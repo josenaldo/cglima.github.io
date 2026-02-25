@@ -9,7 +9,7 @@ description: 'A full editorial platform for a living technical book — built wi
 
 ## 1. Elevator Pitch
 
-Built a complete editorial platform for the *Workaround-Oriented Programming* (POG) book: a living digital product designed for continuous publishing, fluid reading, and organic discoverability at scale.
+Built a complete editorial platform for the _Workaround-Oriented Programming_ (POG) book: a living digital product designed for continuous publishing, fluid reading, and organic discoverability at scale.
 
 More than an institutional site — it's a content architecture that lets you write, version, publish, and evolve chapters quickly, while keeping technical quality, performance, and editorial consistency.
 

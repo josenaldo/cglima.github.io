@@ -1,5 +1,5 @@
 ---
-title: "AI and Developers: Another Brick or Another Floor?"
+title: 'AI and Developers: Another Brick or Another Floor?'
 description: 'AI will shake the market — that much is certain. Whether it walls developers in or elevates them depends on a timescale most people forget to consider.'
 date: 2026-02-22 09:25:00 -0300
 author: Josenaldo Matos
@@ -13,7 +13,7 @@ Nobody does.
 
 Anyone who tells you with certainty that AI will eliminate developers — or that developers have nothing to worry about — is selling you something. Probably confidence they don't have.
 
-What I *can* do is look backwards. And when I do, I see a pattern that keeps repeating, wave after wave, technology after technology.
+What I _can_ do is look backwards. And when I do, I see a pattern that keeps repeating, wave after wave, technology after technology.
 
 That pattern is what this article is about.
 
@@ -21,24 +21,24 @@ That pattern is what this article is about.
 
 ## Two Metaphors, One Conflict
 
-Pink Floyd sang *"Another Brick in the Wall"* — a song about systems that imprison, dehumanize, flatten people into components of something that doesn't serve them.
+Pink Floyd sang _"Another Brick in the Wall"_ — a song about systems that imprison, dehumanize, flatten people into components of something that doesn't serve them.
 
-When I look at how AI is being deployed *today*, in a capitalist market driven by short-term results, I see that metaphor playing out in real time:
+When I look at how AI is being deployed _today_, in a capitalist market driven by short-term results, I see that metaphor playing out in real time:
 
-* Junior developers being replaced before they ever become seniors.
-* Hiring freezes justified by "AI can do that now."
-* Power concentrating in the hands of whoever controls the models.
-* Professionals — real people — absorbing the cost of a transition they didn't choose.
+- Junior developers being replaced before they ever become seniors.
+- Hiring freezes justified by "AI can do that now."
+- Power concentrating in the hands of whoever controls the models.
+- Professionals — real people — absorbing the cost of a transition they didn't choose.
 
 That's the brick.
 
 But there's another metaphor. Software engineering is like a skyscraper under construction. Each era adds a new floor of abstraction:
 
-* Machine code. Assembly. Operating systems.
-* High-level languages. Frameworks. Cloud platforms.
-* And now: AI-assisted development.
+- Machine code. Assembly. Operating systems.
+- High-level languages. Frameworks. Cloud platforms.
+- And now: AI-assisted development.
 
-Each new floor didn't demolish what was below. It raised the building higher — and made the foundation *more* critical, not less. The higher the structure, the more pressure on the ground it stands on.
+Each new floor didn't demolish what was below. It raised the building higher — and made the foundation _more_ critical, not less. The higher the structure, the more pressure on the ground it stands on.
 
 That's the floor.
 
@@ -108,7 +108,7 @@ The wave is violent and disorienting. It feels like destruction. But waves move 
 
 **Understand the floor below you.**
 
-Every new abstraction creates distance from the layers underneath. The developers who survive transitions — and who gain leverage in the new world — are the ones who can go downstairs when the abstraction fails. Knowing *why* something works is more durable than knowing *how* to operate a tool that might not exist next year.
+Every new abstraction creates distance from the layers underneath. The developers who survive transitions — and who gain leverage in the new world — are the ones who can go downstairs when the abstraction fails. Knowing _why_ something works is more durable than knowing _how_ to operate a tool that might not exist next year.
 
 **Position yourself at the boundary.**
 

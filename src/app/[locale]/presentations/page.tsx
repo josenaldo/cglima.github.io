@@ -1,9 +1,9 @@
-import { setRequestLocale, getTranslations } from 'next-intl/server'
-import type { Metadata } from 'next'
 import Grid from '@mui/material/Grid'
+import type { Metadata } from 'next'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 
-import { routing } from '@/i18n/routing'
 import { getAllPresentations, PresentationCard } from '@/features/presentations'
+import { routing } from '@/i18n/routing'
 import Section from '@/ui/Section'
 
 export function generateStaticParams() {

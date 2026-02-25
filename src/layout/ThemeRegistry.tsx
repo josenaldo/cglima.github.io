@@ -2,10 +2,10 @@
 
 import React, { createContext, useCallback, useContext, useMemo } from 'react'
 
-import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter'
 import CssBaseline from '@mui/material/CssBaseline'
 import { ThemeProvider } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
+import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter'
 
 import { darkTheme, lightTheme } from '@/styles/theme'
 
@@ -31,11 +31,7 @@ export function useColorMode() {
 
 const STORAGE_KEY = 'color-mode'
 
-export default function ThemeRegistry({
-    children,
-}: {
-    children: React.ReactNode
-}) {
+export default function ThemeRegistry({ children }: { children: React.ReactNode }) {
     const prefersDark = useMediaQuery('(prefers-color-scheme: dark)', {
         noSsr: true,
     })
@@ -57,15 +53,9 @@ export default function ThemeRegistry({
         })
     }, [])
 
-    const theme = useMemo(
-        () => (mode === 'light' ? lightTheme : darkTheme),
-        [mode]
-    )
+    const theme = useMemo(() => (mode === 'light' ? lightTheme : darkTheme), [mode])
 
-    const colorModeValue = useMemo(
-        () => ({ mode, toggleColorMode }),
-        [mode, toggleColorMode]
-    )
+    const colorModeValue = useMemo(() => ({ mode, toggleColorMode }), [mode, toggleColorMode])
 
     return (
         <ColorModeContext.Provider value={colorModeValue}>

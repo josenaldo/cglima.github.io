@@ -46,12 +46,7 @@ export default function ContentView({
         <Container maxWidth="md" sx={{ py: { xs: 4, md: 8 } }}>
             {/* Header */}
             <Box component="header" sx={{ mb: 4 }}>
-                <Typography
-                    variant="h2"
-                    component="h1"
-                    gutterBottom
-                    sx={{ fontWeight: 700 }}
-                >
+                <Typography variant="h2" component="h1" gutterBottom sx={{ fontWeight: 700 }}>
                     {title}
                 </Typography>
 
@@ -98,11 +93,7 @@ export default function ContentView({
 
             {/* Prev / Next navigation */}
             {(previous !== undefined || next !== undefined) && (
-                <ContentNavButton
-                    previous={previous}
-                    next={next}
-                    locale={locale}
-                />
+                <ContentNavButton previous={previous} next={next} locale={locale} />
             )}
         </Container>
     )

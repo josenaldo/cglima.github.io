@@ -61,11 +61,7 @@ export default function PresentationCard({
                     {presentation.location && ` · ${presentation.location}`}
                 </Typography>
 
-                <Typography
-                    variant="body2"
-                    color="text.secondary"
-                    sx={{ mb: 2, lineHeight: 1.6 }}
-                >
+                <Typography variant="body2" color="text.secondary" sx={{ mb: 2, lineHeight: 1.6 }}>
                     {presentation.description}
                 </Typography>
 

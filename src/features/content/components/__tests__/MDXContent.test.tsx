@@ -6,9 +6,7 @@ import MDXContent from '../MDXContent'
 describe('MDXContent', () => {
     it('renders markdown text as HTML', () => {
         render(<MDXContent content="# Hello World" />)
-        expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(
-            'Hello World'
-        )
+        expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Hello World')
     })
 
     it('renders paragraphs', () => {

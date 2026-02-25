@@ -1,23 +1,21 @@
-import { setRequestLocale, getTranslations } from 'next-intl/server'
 import type { Metadata } from 'next'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 
 import AppConfig from '@/config/AppConfig'
-import { routing } from '@/i18n/routing'
-
 import { getSortedPosts } from '@/features/blog'
-import { getPinnedProjects } from '@/features/projects'
 import { lastExperiences } from '@/features/experiences'
-import { getServices } from '@/features/services'
-import { getTestimonials } from '@/features/testimonials'
-
 import {
-    Hero,
-    FeaturedProjects,
-    LatestPosts,
     ExperiencesSection,
+    FeaturedProjects,
+    Hero,
+    LatestPosts,
     ServicesSection,
     TestimonialsSection,
 } from '@/features/home'
+import { getPinnedProjects } from '@/features/projects'
+import { getServices } from '@/features/services'
+import { getTestimonials } from '@/features/testimonials'
+import { routing } from '@/i18n/routing'
 
 // ─── Static params ────────────────────────────────────────────────────────────
 
@@ -51,7 +49,7 @@ export default async function HomePage({ params }: HomePageProps) {
     setRequestLocale(locale)
 
     const t = await getTranslations({ locale })
-    const sections = AppConfig.sections
+    const { sections } = AppConfig
 
     const [pinnedProjects, latestPosts, recentExperiences, services, testimonials] =
         await Promise.resolve([
@@ -67,7 +65,6 @@ export default async function HomePage({ params }: HomePageProps) {
             {sections.hero && (
                 <Hero
                     greeting={t('home.hero.greeting')}
-                    resumeLabel={t('home.hero.cta.resume')}
                     contactLabel={t('home.hero.cta.contact')}
                 />
             )}
