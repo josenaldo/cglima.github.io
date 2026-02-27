@@ -23,6 +23,7 @@
 
 # contentlayer
 .contentlayer
+.contentlayer/**
 
 # PWA generated files
 /public/sw.js
