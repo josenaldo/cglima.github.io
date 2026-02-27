@@ -6,6 +6,7 @@ import { navItems } from '@/config/navigation'
 import Logo from '@/ui/Logo'
 
 import DesktopMenu from './DesktopMenu'
+import LanguageSwitcher from './LanguageSwitcher'
 import MobileMenu from './MobileMenu'
 import ThemeToggle from './ThemeToggle'
 
@@ -29,6 +30,7 @@ export default function Header() {
                     <DesktopMenu items={navItems} />
 
                     <Toolbar disableGutters sx={{ gap: 1 }}>
+                        <LanguageSwitcher />
                         <ThemeToggle />
                         <MobileMenu items={navItems} />
                     </Toolbar>
