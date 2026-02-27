@@ -18,26 +18,26 @@ export interface NavItem {
     icon: SvgIconComponent
 }
 
-// All possible nav items — filtered below based on AppConfig.sections
-const allNavItems: NavItem[] = [
-    { key: 'home', href: '/', icon: HomeIcon },
-    { key: 'blog', href: '/blog', icon: ArticleIcon },
-    { key: 'projects', href: '/projects', icon: StarIcon },
-    { key: 'experiences', href: '/experiences', icon: WorkIcon },
-    { key: 'skills', href: '/skills', icon: SettingsIcon },
-    { key: 'courses', href: '/courses', icon: MenuBookIcon },
-    { key: 'services', href: '/services', icon: PeopleIcon },
-    { key: 'presentations', href: '/presentations', icon: PresentationIcon },
-    { key: 'publications', href: '/publications', icon: ArticleIcon },
-    { key: 'search', href: '/search', icon: SearchIcon },
-    { key: 'contact', href: '/contact', icon: ContactMailIcon },
-]
+// Registry of all available nav items keyed by their route key.
+// Order and visibility come from AppConfig.navigation in site/config.json.
+const navRegistry: Record<string, NavItem> = {
+    home: { key: 'home', href: '/', icon: HomeIcon },
+    blog: { key: 'blog', href: '/blog', icon: ArticleIcon },
+    projects: { key: 'projects', href: '/projects', icon: StarIcon },
+    experiences: { key: 'experiences', href: '/experiences', icon: WorkIcon },
+    skills: { key: 'skills', href: '/skills', icon: SettingsIcon },
+    courses: { key: 'courses', href: '/courses', icon: MenuBookIcon },
+    services: { key: 'services', href: '/services', icon: PeopleIcon },
+    presentations: { key: 'presentations', href: '/presentations', icon: PresentationIcon },
+    publications: { key: 'publications', href: '/publications', icon: ArticleIcon },
+    search: { key: 'search', href: '/search', icon: SearchIcon },
+    contact: { key: 'contact', href: '/contact', icon: ContactMailIcon },
+}
 
-// Sections not bound to a home section toggle are always visible
-const alwaysVisible = new Set(['home', 'courses', 'presentations', 'publications', 'search'])
-
-export const navItems: NavItem[] = allNavItems.filter(
-    (item) =>
-        alwaysVisible.has(item.key) ||
-        AppConfig.sections[item.key as keyof typeof AppConfig.sections] !== false
-)
+// Build the final nav list from config:
+// - order comes from AppConfig.navigation array
+// - items with visible: false are excluded
+// - unknown keys are silently ignored
+export const navItems: NavItem[] = AppConfig.navigation
+    .filter((entry) => entry.visible && navRegistry[entry.key])
+    .map((entry) => navRegistry[entry.key])

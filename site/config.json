@@ -1,12 +1,12 @@
 {
     "siteName": "Portfolio",
     "siteUrl": "https://cglima.github.io",
-    "seoDescription": "Site pessoal e portfólio de C. G. Lima.",
+    "seoDescription": "Site pessoal e portfólio de Cassiana Gabriela Lima Barreto.",
     "ogImage": "/images/og-default.png",
 
     "owner": {
-        "name": "C. G. Lima",
-        "title": "Desenvolvedor de Software",
+        "name": "Cassiana Gabriela Lima Barreto",
+        "title": "Engenheira de Dados",
         "bio": "",
         "email": "",
         "avatar": "/images/avatar.jpg",
@@ -40,5 +40,19 @@
         "testimonials": true,
         "blog": true,
         "contact": true
-    }
+    },
+
+    "navigation": [
+        { "key": "home", "visible": true },
+        { "key": "blog", "visible": true },
+        { "key": "projects", "visible": true },
+        { "key": "experiences", "visible": true },
+        { "key": "skills", "visible": false },
+        { "key": "courses", "visible": true },
+        { "key": "services", "visible": false },
+        { "key": "presentations", "visible": false },
+        { "key": "publications", "visible": false },
+        { "key": "search", "visible": true },
+        { "key": "contact", "visible": true }
+    ]
 }

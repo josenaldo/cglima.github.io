@@ -67,4 +67,18 @@ export interface SiteConfig {
         blog: boolean
         contact: boolean
     }
+
+    /**
+     * Navigation menu items — controls both order and visibility.
+     * Each entry maps to a known route key. Items are rendered in the
+     * order listed here; set `visible: false` to hide an item from the menu.
+     * Available keys: home, blog, projects, experiences, skills, courses,
+     * services, presentations, publications, search, contact
+     */
+    navigation: Array<{
+        /** Route key (must match one of the known nav keys) */
+        key: string
+        /** Whether the item is shown in the navigation menu */
+        visible: boolean
+    }>
 }
