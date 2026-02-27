@@ -323,7 +323,7 @@ export const Publication = defineDocumentType(() => ({
 // ─── Source ───────────────────────────────────────────────────────────────────
 
 export default makeSource({
-    contentDirPath: 'content',
+    contentDirPath: 'site/content',
     documentTypes: [
         Post,
         Page,

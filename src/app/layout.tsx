@@ -9,9 +9,9 @@ export const metadata: Metadata = {
         default: AppConfig.siteName,
         template: `%s | ${AppConfig.siteName}`,
     },
-    description: 'Personal portfolio and blog.',
+    description: AppConfig.seoDescription,
     metadataBase: new URL(AppConfig.siteUrl),
-    manifest: '/manifest.json',
+    manifest: '/manifest.webmanifest',
     icons: {
         icon: '/favicon.ico',
     },
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-    themeColor: '#8855DF',
+    themeColor: AppConfig.pwa.themeColor,
 }
 
 export default function RootLayout({
@@ -40,10 +40,7 @@ export default function RootLayout({
             <head>
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-                <link
-                    rel="stylesheet"
-                    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-                />
+                <link rel="stylesheet" href={AppConfig.theme.fontUrl} />
             </head>
             <body>{children}</body>
         </html>

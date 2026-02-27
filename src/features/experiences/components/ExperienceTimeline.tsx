@@ -46,9 +46,7 @@ export default function ExperienceTimeline({
                         </TimelineOppositeContent>
                         <TimelineSeparator>
                             <TimelineDot color="secondary" />
-                            <TimelineConnector
-                                sx={{ backgroundColor: 'secondary.main' }}
-                            />
+                            <TimelineConnector sx={{ backgroundColor: 'secondary.main' }} />
                         </TimelineSeparator>
                         <TimelineContent
                             sx={{
@@ -61,10 +59,7 @@ export default function ExperienceTimeline({
                                 p: 2,
                             }}
                         >
-                            <ExperienceItem
-                                experience={exp}
-                                presentLabel={presentLabel}
-                            />
+                            <ExperienceItem experience={exp} presentLabel={presentLabel} />
                         </TimelineContent>
                     </TimelineItem>
                 ))}

@@ -17,6 +17,10 @@
 /.next/
 /out/
 
+# generated public assets (sourced from site/images and site/icons)
+/public/images/
+/public/icons/
+
 # contentlayer
 .contentlayer
 

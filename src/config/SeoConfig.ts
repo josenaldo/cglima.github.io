@@ -3,7 +3,7 @@ import AppConfig from './AppConfig'
 const SeoConfig = {
     defaultTitle: AppConfig.siteName,
     titleTemplate: `%s | ${AppConfig.siteName}`,
-    description: 'Personal portfolio and blog.',
+    description: AppConfig.seoDescription,
     canonical: AppConfig.siteUrl,
     openGraph: {
         type: 'website',
@@ -12,7 +12,7 @@ const SeoConfig = {
         siteName: AppConfig.siteName,
         images: [
             {
-                url: `${AppConfig.siteUrl}/images/og-default.png`,
+                url: `${AppConfig.siteUrl}${AppConfig.ogImage}`,
                 width: 1200,
                 height: 630,
                 alt: AppConfig.siteName,
@@ -20,8 +20,8 @@ const SeoConfig = {
         ],
     },
     twitter: {
-        handle: '',
-        site: '',
+        handle: AppConfig.owner.twitter,
+        site: AppConfig.owner.twitter,
         cardType: 'summary_large_image',
     },
     additionalLinkTags: [

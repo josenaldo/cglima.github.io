@@ -1,0 +1,44 @@
+{
+    "siteName": "Portfolio",
+    "siteUrl": "https://cglima.github.io",
+    "seoDescription": "Site pessoal e portfólio de C. G. Lima.",
+    "ogImage": "/images/og-default.png",
+
+    "owner": {
+        "name": "C. G. Lima",
+        "title": "Desenvolvedor de Software",
+        "bio": "",
+        "email": "",
+        "avatar": "/images/avatar.jpg",
+        "github": "https://github.com/cglima",
+        "linkedin": "",
+        "twitter": ""
+    },
+
+    "theme": {
+        "primaryColor": "#8855DF",
+        "secondaryColor": "#64D8CB",
+        "fontName": "Roboto",
+        "fontUrl": "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    },
+
+    "pwa": {
+        "themeColor": "#8855DF",
+        "backgroundColor": "#0F0F1A",
+        "startUrl": "/pt"
+    },
+
+    "locales": ["pt", "en"],
+    "defaultLocale": "pt",
+
+    "sections": {
+        "hero": true,
+        "services": true,
+        "projects": true,
+        "experiences": true,
+        "skills": true,
+        "testimonials": true,
+        "blog": true,
+        "contact": true
+    }
+}

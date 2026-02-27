@@ -10,13 +10,16 @@ import PresentationIcon from '@mui/icons-material/Slideshow'
 import StarIcon from '@mui/icons-material/Star'
 import WorkIcon from '@mui/icons-material/Work'
 
+import AppConfig from './AppConfig'
+
 export interface NavItem {
     key: string
     href: string
     icon: SvgIconComponent
 }
 
-export const navItems: NavItem[] = [
+// All possible nav items — filtered below based on AppConfig.sections
+const allNavItems: NavItem[] = [
     { key: 'home', href: '/', icon: HomeIcon },
     { key: 'blog', href: '/blog', icon: ArticleIcon },
     { key: 'projects', href: '/projects', icon: StarIcon },
@@ -29,3 +32,12 @@ export const navItems: NavItem[] = [
     { key: 'search', href: '/search', icon: SearchIcon },
     { key: 'contact', href: '/contact', icon: ContactMailIcon },
 ]
+
+// Sections not bound to a home section toggle are always visible
+const alwaysVisible = new Set(['home', 'courses', 'presentations', 'publications', 'search'])
+
+export const navItems: NavItem[] = allNavItems.filter(
+    (item) =>
+        alwaysVisible.has(item.key) ||
+        AppConfig.sections[item.key as keyof typeof AppConfig.sections] !== false
+)

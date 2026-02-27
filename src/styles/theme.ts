@@ -1,18 +1,17 @@
 import { createTheme } from '@mui/material/styles'
 
+import AppConfig from '@/config/AppConfig'
+
 // ─── Shared palette values ────────────────────────────────────────────────────
+// Primary and secondary colors come from site/config.json — edit them there.
 
 const sharedPalette = {
     primary: {
-        main: '#8855DF',
-        light: '#A97EE8',
-        dark: '#6030B5',
+        main: AppConfig.theme.primaryColor,
         contrastText: '#FFFFFF',
     },
     secondary: {
-        main: '#64D8CB',
-        light: '#9EEAE5',
-        dark: '#3EADA2',
+        main: AppConfig.theme.secondaryColor,
         contrastText: '#000000',
     },
     error: {
@@ -28,6 +27,8 @@ const sharedPalette = {
         main: '#A5D6A7',
     },
 }
+
+const fontFamily = `"${AppConfig.theme.fontName}", "Helvetica", "Arial", sans-serif`
 
 // ─── Light theme ──────────────────────────────────────────────────────────────
 
@@ -45,7 +46,7 @@ export const lightTheme = createTheme({
         },
     },
     typography: {
-        fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+        fontFamily,
     },
 })
 
@@ -56,7 +57,7 @@ export const darkTheme = createTheme({
         mode: 'dark',
         ...sharedPalette,
         background: {
-            default: '#0F0F1A',
+            default: AppConfig.pwa.backgroundColor,
             paper: '#1A1A2E',
         },
         text: {
@@ -65,7 +66,7 @@ export const darkTheme = createTheme({
         },
     },
     typography: {
-        fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+        fontFamily,
     },
 })
 
