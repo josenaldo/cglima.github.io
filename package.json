@@ -23,6 +23,7 @@
         "@emotion/styled": "^11.14.1",
         "@mdx-js/react": "^3.1.0",
         "@mui/icons-material": "^7.3.8",
+        "@mui/lab": "^7.0.1-beta.22",
         "@mui/material": "^7.3.8",
         "@mui/material-nextjs": "^7.3.8",
         "axios": "^1.8.3",
