@@ -1,0 +1,898 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Sveltia CMS – cglima.github.io
+#
+# HOW TO LOG IN:
+#   1. Generate a fine-grained Personal Access Token (PAT) on GitHub:
+#      Settings → Developer Settings → Fine-grained tokens
+#      Permissions: Contents → Read and Write  (for this repo only)
+#   2. Open https://cglima.github.io/admin
+#   3. Click "Sign in with PAT" and paste the token
+#
+# Docs: https://github.com/sveltia/sveltia-cms
+# ─────────────────────────────────────────────────────────────────────────────
+
+backend:
+    name: github
+    repo: josenaldo/cglima.github.io
+    branch: main
+
+# Images are stored in site/images/ (git) and synced to public/images/ at build time.
+media_folder: site/images
+public_folder: /images
+
+# All content lives in site/content/{type}/{locale}/{slug}.md
+i18n:
+    structure: locale_folders
+    locales: [pt, en]
+    default_locale: pt
+
+# ─────────────────────────────────────────────────────────────────────────────
+# COLLECTIONS
+# ─────────────────────────────────────────────────────────────────────────────
+collections:
+    # ── Blog posts ────────────────────────────────────────────────────────────
+    - name: blog
+      label: Blog
+      label_singular: Post
+      folder: site/content/blog
+      create: true
+      slug: '{{slug}}'
+      i18n: true
+      fields:
+          - { name: title, label: Título, widget: string }
+          - { name: description, label: Descrição curta, widget: text }
+          - { name: date, label: Data de publicação, widget: datetime }
+          - { name: author, label: Autor, widget: string }
+          - { name: category, label: Categoria, widget: string }
+          - { name: image, label: Imagem capa, widget: image }
+          - {
+                name: draft,
+                label: Rascunho (não publicar),
+                widget: boolean,
+                default: false,
+                required: false,
+            }
+          - { name: tags, label: Tags, widget: list, required: false }
+          - { name: body, label: Conteúdo, widget: markdown }
+
+    # ── Projects ──────────────────────────────────────────────────────────────
+    - name: projects
+      label: Projetos
+      label_singular: Projeto
+      folder: site/content/projects
+      create: true
+      slug: '{{slug}}'
+      i18n: true
+      fields:
+          - { name: id, label: 'ID (usado para ordenação)', widget: number }
+          - { name: title, label: Título, widget: string }
+          - { name: description, label: Descrição curta, widget: text }
+          - { name: pin, label: Destacar na home, widget: boolean, default: false }
+          - { name: image, label: Imagem, widget: image }
+          - { name: projectUrl, label: URL do projeto, widget: string, required: false }
+          - {
+                name: repositoryUrl,
+                label: URL do repositório (GitHub),
+                widget: string,
+                required: false,
+            }
+          - { name: tags, label: Tecnologias / Tags, widget: list, required: false }
+          - { name: body, label: Descrição longa, widget: markdown }
+
+    # ── Work experiences ──────────────────────────────────────────────────────
+    - name: experiences
+      label: Experiências
+      label_singular: Experiência
+      folder: site/content/experiences
+      create: true
+      slug: '{{id}}-{{slug}}'
+      i18n: true
+      fields:
+          - { name: id, label: 'ID (define a ordem — menor = mais recente)', widget: number }
+          - { name: title, label: Cargo, widget: string }
+          - { name: company, label: Empresa, widget: string }
+          - { name: location, label: 'Local (ex: Remoto, São Paulo)', widget: string }
+          - { name: description, label: Resumo da atuação, widget: text }
+          - { name: period, label: 'Período (ex: Junho 2024 - Atual)', widget: string }
+          - { name: show, label: Exibir no site, widget: boolean, default: true }
+          - { name: body, label: Descrição detalhada, widget: markdown }
+
+    # ── Skills ────────────────────────────────────────────────────────────────
+    - name: skills
+      label: Habilidades
+      label_singular: Habilidade
+      folder: site/content/skills
+      create: true
+      slug: '{{slug}}'
+      i18n: true
+      fields:
+          - { name: name, label: Nome da habilidade, widget: string }
+          - name: level
+            label: Nível
+            widget: select
+            options:
+                - { label: Básico, value: basic }
+                - { label: Intermediário, value: intermediate }
+                - { label: Avançado, value: advanced }
+                - { label: Expert, value: expert }
+          - { name: firstContact, label: 'Ano do primeiro contato (ex: 2020)', widget: number }
+          - {
+                name: category,
+                label: 'Categoria (ex: Backend, Frontend, Cloud)',
+                widget: string,
+                required: false,
+            }
+          - {
+                name: icon,
+                label: 'Ícone (slug do Simple Icons ou nome do MUI Icon)',
+                widget: string,
+                required: false,
+            }
+
+    # ── Courses & certifications ──────────────────────────────────────────────
+    - name: courses
+      label: Cursos e Certificações
+      label_singular: Curso
+      folder: site/content/courses
+      create: true
+      slug: '{{slug}}'
+      i18n: true
+      fields:
+          - { name: name, label: Nome do curso, widget: string }
+          - { name: institution, label: Instituição, widget: string }
+          - { name: completionDate, label: Data de conclusão, widget: datetime, time_format: false }
+          - { name: workload, label: Carga horária (horas), widget: number }
+          - { name: courseLink, label: Link do curso, widget: string, required: false }
+          - { name: certificateLink, label: Link do certificado, widget: string, required: false }
+          - { name: body, label: Descrição, widget: markdown, required: false }
+
+    # ── Services ──────────────────────────────────────────────────────────────
+    - name: services
+      label: Serviços
+      label_singular: Serviço
+      folder: site/content/services
+      create: true
+      slug: '{{slug}}'
+      i18n: true
+      fields:
+          - { name: order, label: Ordem de exibição, widget: number }
+          - { name: title, label: Título, widget: string }
+          - { name: description, label: Descrição, widget: text }
+          - { name: image, label: Imagem, widget: image }
+          - { name: icon, label: 'Ícone (nome do MUI Icon, ex: api, cloud, code)', widget: string }
+          - { name: show, label: Exibir no site, widget: boolean, default: true, required: false }
+
+    # ── Testimonials ──────────────────────────────────────────────────────────
+    - name: testimonials
+      label: Depoimentos
+      label_singular: Depoimento
+      folder: site/content/testimonials
+      create: true
+      slug: '{{slug}}'
+      i18n: true
+      fields:
+          - { name: name, label: Nome, widget: string }
+          - { name: position, label: Cargo, widget: string }
+          - { name: company, label: Empresa, widget: string, required: false }
+          - { name: testimonial, label: Depoimento, widget: text }
+          - { name: image, label: Foto, widget: image }
+          - { name: show, label: Exibir no site, widget: boolean, default: true, required: false }
+
+    # ── Presentations / talks ─────────────────────────────────────────────────
+    - name: presentations
+      label: Apresentações
+      label_singular: Apresentação
+      folder: site/content/presentations
+      create: true
+      slug: '{{slug}}'
+      i18n: true
+      fields:
+          - { name: title, label: Título, widget: string }
+          - { name: description, label: Descrição, widget: text }
+          - { name: date, label: Data, widget: datetime, time_format: false }
+          - { name: event, label: Evento, widget: string }
+          - { name: location, label: Local, widget: string, required: false }
+          - { name: slidesUrl, label: URL dos slides, widget: string, required: false }
+          - { name: videoUrl, label: URL do vídeo, widget: string, required: false }
+          - { name: image, label: Imagem, widget: image, required: false }
+          - { name: show, label: Exibir no site, widget: boolean, default: true, required: false }
+          - { name: body, label: Detalhes, widget: markdown, required: false }
+
+    # ── Publications ──────────────────────────────────────────────────────────
+    - name: publications
+      label: Publicações
+      label_singular: Publicação
+      folder: site/content/publications
+      create: true
+      slug: '{{slug}}'
+      i18n: true
+      fields:
+          - { name: title, label: Título, widget: string }
+          - { name: description, label: Descrição, widget: text }
+          - { name: date, label: Data, widget: datetime, time_format: false }
+          - { name: publisher, label: 'Publicado por (editora, plataforma)', widget: string }
+          - name: type
+            label: Tipo
+            widget: select
+            options:
+                - { label: Artigo, value: article }
+                - { label: Livro, value: book }
+                - { label: Paper, value: paper }
+                - { label: Tutorial, value: tutorial }
+                - { label: Outro, value: other }
+          - { name: url, label: URL da publicação, widget: string, required: false }
+          - { name: image, label: Imagem capa, widget: image, required: false }
+          - { name: show, label: Exibir no site, widget: boolean, default: true, required: false }
+          - { name: body, label: Resumo, widget: markdown, required: false }
+
+    # ── Static pages ──────────────────────────────────────────────────────────
+    - name: pages
+      label: Páginas
+      label_singular: Página
+      folder: site/content/pages
+      create: true
+      slug: '{{slug}}'
+      i18n: true
+      fields:
+          - { name: title, label: Título, widget: string }
+          - { name: description, label: Descrição SEO, widget: text }
+          - { name: image, label: Imagem OG, widget: image }
+          - { name: body, label: Conteúdo, widget: markdown }
+
+    # ── Site settings (config.json) ───────────────────────────────────────────
+    - name: settings
+      label: '⚙️ Configurações'
+      files:
+          - name: site_config
+            label: Configurações do Site
+            file: site/config.json
+            format: json
+            fields:
+                - { name: siteName, label: Nome do site, widget: string }
+                - {
+                      name: siteUrl,
+                      label: 'URL do site (ex: https://cglima.github.io)',
+                      widget: string,
+                  }
+                - { name: seoDescription, label: Descrição padrão (SEO), widget: text }
+                - { name: ogImage, label: Imagem Open Graph padrão, widget: image }
+
+                - name: owner
+                  label: Informações pessoais
+                  widget: object
+                  fields:
+                      - { name: name, label: Nome completo, widget: string }
+                      - { name: title, label: Título / Cargo, widget: string }
+                      - { name: bio, label: Bio (parágrafos de apresentação), widget: text }
+                      - { name: email, label: Email, widget: string }
+                      - { name: avatar, label: Foto de perfil, widget: image }
+                      - { name: github, label: GitHub URL, widget: string }
+                      - { name: linkedin, label: LinkedIn URL, widget: string }
+                      - { name: twitter, label: Twitter / X URL, widget: string }
+
+                - name: theme
+                  label: Tema visual
+                  widget: object
+                  fields:
+                      - {
+                            name: primaryColor,
+                            label: 'Cor primária (hex, ex: #8855DF)',
+                            widget: string,
+                        }
+                      - {
+                            name: secondaryColor,
+                            label: 'Cor secundária (hex, ex: #64D8CB)',
+                            widget: string,
+                        }
+                      - { name: fontName, label: 'Nome da fonte (ex: Roboto)', widget: string }
+                      - { name: fontUrl, label: URL da fonte Google Fonts, widget: string }
+
+                - name: pwa
+                  label: App (PWA)
+                  widget: object
+                  fields:
+                      - { name: themeColor, label: 'Cor do tema do browser (hex)', widget: string }
+                      - {
+                            name: backgroundColor,
+                            label: 'Cor do splash screen (hex)',
+                            widget: string,
+                        }
+                      - { name: startUrl, label: 'URL de início (ex: /pt)', widget: string }
+
+                - name: locales
+                  label: Idiomas disponíveis
+                  widget: list
+                  field:
+                      name: locale
+                      label: Locale
+                      widget: string
+
+                - { name: defaultLocale, label: Idioma padrão, widget: string }
+
+                - name: sections
+                  label: Seções visíveis na home
+                  widget: object
+                  fields:
+                      - { name: hero, label: Hero / Apresentação, widget: boolean }
+                      - { name: services, label: Serviços, widget: boolean }
+                      - { name: projects, label: Projetos, widget: boolean }
+                      - { name: experiences, label: Experiências, widget: boolean }
+                      - { name: skills, label: Habilidades, widget: boolean }
+                      - { name: testimonials, label: Depoimentos, widget: boolean }
+                      - { name: blog, label: Blog, widget: boolean }
+                      - { name: contact, label: Contato, widget: boolean }
+
+                - name: navigation
+                  label: Menu de navegação (ordem e visibilidade)
+                  widget: list
+                  fields:
+                      - name: key
+                        label: 'Página (chave)'
+                        widget: select
+                        options:
+                            - { label: Início, value: home }
+                            - { label: Blog, value: blog }
+                            - { label: Projetos, value: projects }
+                            - { label: Experiências, value: experiences }
+                            - { label: Habilidades, value: skills }
+                            - { label: Cursos, value: courses }
+                            - { label: Serviços, value: services }
+                            - { label: Apresentações, value: presentations }
+                            - { label: Publicações, value: publications }
+                            - { label: Buscar, value: search }
+                            - { label: Contato, value: contact }
+                      - { name: visible, label: Visível, widget: boolean }
+
+    # ── Translations (messages JSON) ──────────────────────────────────────────
+    - name: translations
+      label: '🌐 Traduções'
+      files:
+          - name: messages_pt
+            label: 'Traduções — Português'
+            file: site/messages/pt.json
+            format: json
+            fields:
+                - {
+                      name: nav,
+                      label: Navegação (menu),
+                      widget: object,
+                      fields:
+                          [
+                              { name: home, label: Início, widget: string },
+                              { name: blog, label: Blog, widget: string },
+                              { name: projects, label: Projetos, widget: string },
+                              { name: experiences, label: Experiências, widget: string },
+                              { name: skills, label: Habilidades, widget: string },
+                              { name: courses, label: Cursos, widget: string },
+                              { name: services, label: Serviços, widget: string },
+                              { name: presentations, label: Apresentações, widget: string },
+                              { name: publications, label: Publicações, widget: string },
+                              { name: search, label: Buscar, widget: string },
+                              { name: contact, label: Contato, widget: string },
+                          ],
+                  }
+                - name: common
+                  label: Textos comuns
+                  widget: object
+                  fields:
+                      - { name: readMore, label: Ler mais, widget: string }
+                      - { name: viewAll, label: Ver todos, widget: string }
+                      - { name: viewProject, label: Ver projeto, widget: string }
+                      - { name: viewRepository, label: Ver repositório, widget: string }
+                      - { name: loading, label: Carregando, widget: string }
+                      - { name: noResults, label: Sem resultados, widget: string }
+                      - { name: back, label: Voltar, widget: string }
+                      - { name: next, label: Próximo, widget: string }
+                      - { name: previous, label: Anterior, widget: string }
+                      - { name: language, label: Idioma, widget: string }
+                      - { name: toggleTheme, label: Alternar tema, widget: string }
+                      - { name: lightMode, label: Modo claro, widget: string }
+                      - { name: darkMode, label: Modo escuro, widget: string }
+                      - { name: search, label: Buscar (botão), widget: string }
+                      - { name: searchPlaceholder, label: Placeholder da busca, widget: string }
+                - name: home
+                  label: Página inicial
+                  widget: object
+                  fields:
+                      - { name: title, label: Título, widget: string }
+                      - name: hero
+                        label: Hero
+                        widget: object
+                        fields:
+                            - { name: greeting, label: Saudação, widget: string }
+                            - name: cta
+                              label: Botões de ação
+                              widget: object
+                              fields:
+                                  - { name: resume, label: Currículo, widget: string }
+                                  - { name: contact, label: Contato, widget: string }
+                      - name: featuredProjects
+                        label: Projetos em destaque
+                        widget: object
+                        fields:
+                            - { name: title, label: Título, widget: string }
+                            - { name: subtitle, label: Subtítulo, widget: string }
+                      - name: latestPosts
+                        label: Últimas publicações
+                        widget: object
+                        fields:
+                            - { name: title, label: Título, widget: string }
+                            - { name: subtitle, label: Subtítulo, widget: string }
+                      - name: experiences
+                        label: Experiências
+                        widget: object
+                        fields:
+                            - { name: title, label: Título, widget: string }
+                            - { name: subtitle, label: Subtítulo, widget: string }
+                      - name: services
+                        label: Serviços
+                        widget: object
+                        fields:
+                            - { name: title, label: Título, widget: string }
+                            - { name: subtitle, label: Subtítulo, widget: string }
+                      - name: testimonials
+                        label: Depoimentos
+                        widget: object
+                        fields:
+                            - { name: title, label: Título, widget: string }
+                            - { name: subtitle, label: Subtítulo, widget: string }
+                - name: blog
+                  label: Blog
+                  widget: object
+                  fields:
+                      - { name: title, label: Título, widget: string }
+                      - { name: subtitle, label: Subtítulo, widget: string }
+                      - {
+                            name: readTime,
+                            label: 'Tempo de leitura (use {minutes})',
+                            widget: string,
+                        }
+                      - { name: postedOn, label: Publicado em, widget: string }
+                      - { name: by, label: Por, widget: string }
+                      - { name: tags, label: Tags, widget: string }
+                      - { name: category, label: Categoria, widget: string }
+                      - { name: share, label: Compartilhar, widget: string }
+                - name: projects
+                  label: Projetos
+                  widget: object
+                  fields:
+                      - { name: title, label: Título, widget: string }
+                      - { name: subtitle, label: Subtítulo, widget: string }
+                      - { name: viewProject, label: Ver projeto, widget: string }
+                      - { name: viewCode, label: Ver código, widget: string }
+                      - { name: tags, label: Tags, widget: string }
+                - name: experiences
+                  label: Experiências
+                  widget: object
+                  fields:
+                      - { name: title, label: Título, widget: string }
+                      - { name: subtitle, label: Subtítulo, widget: string }
+                      - { name: present, label: Atual (cargo em andamento), widget: string }
+                - name: skills
+                  label: Habilidades
+                  widget: object
+                  fields:
+                      - { name: title, label: Título, widget: string }
+                      - { name: subtitle, label: Subtítulo, widget: string }
+                      - name: levels
+                        label: Níveis de habilidade
+                        widget: object
+                        fields:
+                            - { name: basic, label: Básico, widget: string }
+                            - { name: intermediate, label: Intermediário, widget: string }
+                            - { name: advanced, label: Avançado, widget: string }
+                            - { name: expert, label: Especialista, widget: string }
+                      - { name: since, label: 'Desde (use {year})', widget: string }
+                - name: courses
+                  label: Cursos
+                  widget: object
+                  fields:
+                      - { name: title, label: Título, widget: string }
+                      - { name: subtitle, label: Subtítulo, widget: string }
+                      - { name: workload, label: 'Carga horária (use {hours})', widget: string }
+                      - { name: certificate, label: Ver certificado, widget: string }
+                      - { name: courseLink, label: Ver curso, widget: string }
+                - name: services
+                  label: Serviços
+                  widget: object
+                  fields:
+                      - { name: title, label: Título, widget: string }
+                      - { name: subtitle, label: Subtítulo, widget: string }
+                - name: presentations
+                  label: Apresentações
+                  widget: object
+                  fields:
+                      - { name: title, label: Título, widget: string }
+                      - { name: subtitle, label: Subtítulo, widget: string }
+                      - { name: viewSlides, label: Ver slides, widget: string }
+                      - { name: viewVideo, label: Ver vídeo, widget: string }
+                - name: publications
+                  label: Publicações
+                  widget: object
+                  fields:
+                      - { name: title, label: Título, widget: string }
+                      - { name: subtitle, label: Subtítulo, widget: string }
+                      - { name: viewPublication, label: Ver publicação, widget: string }
+                      - name: types
+                        label: Tipos de publicação
+                        widget: object
+                        fields:
+                            - { name: article, label: Artigo, widget: string }
+                            - { name: book, label: Livro, widget: string }
+                            - { name: paper, label: Paper, widget: string }
+                            - { name: tutorial, label: Tutorial, widget: string }
+                            - { name: other, label: Outro, widget: string }
+                - name: search
+                  label: Busca
+                  widget: object
+                  fields:
+                      - { name: title, label: Título, widget: string }
+                      - { name: subtitle, label: Subtítulo, widget: string }
+                      - { name: placeholder, label: Placeholder, widget: string }
+                      - { name: results, label: 'Resultados (use {count})', widget: string }
+                      - { name: noResults, label: 'Sem resultados (use {query})', widget: string }
+                      - { name: searching, label: Buscando, widget: string }
+                - name: contact
+                  label: Contato
+                  widget: object
+                  fields:
+                      - { name: title, label: Título, widget: string }
+                      - { name: subtitle, label: Subtítulo, widget: string }
+                      - { name: name, label: Campo nome, widget: string }
+                      - { name: email, label: Campo email, widget: string }
+                      - { name: message, label: Campo mensagem, widget: string }
+                      - { name: send, label: Botão enviar, widget: string }
+                      - { name: github, label: GitHub, widget: string }
+                      - { name: linkedin, label: LinkedIn, widget: string }
+                      - { name: twitter, label: Twitter, widget: string }
+                      - { name: noLinks, label: Mensagem sem links de contato, widget: string }
+                - name: footer
+                  label: Rodapé
+                  widget: object
+                  fields:
+                      - { name: rights, label: Direitos, widget: string }
+                      - { name: madeWith, label: Feito com, widget: string }
+                      - { name: by, label: Por, widget: string }
+                - name: metadata
+                  label: SEO das páginas
+                  widget: object
+                  fields:
+                      - name: home
+                        label: Início
+                        widget: object
+                        fields:
+                            - { name: title, label: Título, widget: string }
+                            - { name: description, label: Descrição, widget: string }
+                      - name: blog
+                        label: Blog
+                        widget: object
+                        fields:
+                            - { name: title, label: Título, widget: string }
+                            - { name: description, label: Descrição, widget: string }
+                      - name: projects
+                        label: Projetos
+                        widget: object
+                        fields:
+                            - { name: title, label: Título, widget: string }
+                            - { name: description, label: Descrição, widget: string }
+                      - name: experiences
+                        label: Experiências
+                        widget: object
+                        fields:
+                            - { name: title, label: Título, widget: string }
+                            - { name: description, label: Descrição, widget: string }
+                      - name: skills
+                        label: Habilidades
+                        widget: object
+                        fields:
+                            - { name: title, label: Título, widget: string }
+                            - { name: description, label: Descrição, widget: string }
+                      - name: courses
+                        label: Cursos
+                        widget: object
+                        fields:
+                            - { name: title, label: Título, widget: string }
+                            - { name: description, label: Descrição, widget: string }
+                      - name: services
+                        label: Serviços
+                        widget: object
+                        fields:
+                            - { name: title, label: Título, widget: string }
+                            - { name: description, label: Descrição, widget: string }
+                      - name: presentations
+                        label: Apresentações
+                        widget: object
+                        fields:
+                            - { name: title, label: Título, widget: string }
+                            - { name: description, label: Descrição, widget: string }
+                      - name: publications
+                        label: Publicações
+                        widget: object
+                        fields:
+                            - { name: title, label: Título, widget: string }
+                            - { name: description, label: Descrição, widget: string }
+                      - name: search
+                        label: Busca
+                        widget: object
+                        fields:
+                            - { name: title, label: Título, widget: string }
+                            - { name: description, label: Descrição, widget: string }
+                      - name: contact
+                        label: Contato
+                        widget: object
+                        fields:
+                            - { name: title, label: Título, widget: string }
+                            - { name: description, label: Descrição, widget: string }
+
+          - name: messages_en
+            label: 'Traduções — English'
+            file: site/messages/en.json
+            format: json
+            fields:
+                - {
+                      name: nav,
+                      label: Navigation (menu),
+                      widget: object,
+                      fields:
+                          [
+                              { name: home, label: Home, widget: string },
+                              { name: blog, label: Blog, widget: string },
+                              { name: projects, label: Projects, widget: string },
+                              { name: experiences, label: Experiences, widget: string },
+                              { name: skills, label: Skills, widget: string },
+                              { name: courses, label: Courses, widget: string },
+                              { name: services, label: Services, widget: string },
+                              { name: presentations, label: Presentations, widget: string },
+                              { name: publications, label: Publications, widget: string },
+                              { name: search, label: Search, widget: string },
+                              { name: contact, label: Contact, widget: string },
+                          ],
+                  }
+                - name: common
+                  label: Common texts
+                  widget: object
+                  fields:
+                      - { name: readMore, label: Read more, widget: string }
+                      - { name: viewAll, label: View all, widget: string }
+                      - { name: viewProject, label: View project, widget: string }
+                      - { name: viewRepository, label: View repository, widget: string }
+                      - { name: loading, label: Loading, widget: string }
+                      - { name: noResults, label: No results, widget: string }
+                      - { name: back, label: Back, widget: string }
+                      - { name: next, label: Next, widget: string }
+                      - { name: previous, label: Previous, widget: string }
+                      - { name: language, label: Language, widget: string }
+                      - { name: toggleTheme, label: Toggle theme, widget: string }
+                      - { name: lightMode, label: Light mode, widget: string }
+                      - { name: darkMode, label: Dark mode, widget: string }
+                      - { name: search, label: Search (button), widget: string }
+                      - { name: searchPlaceholder, label: Search placeholder, widget: string }
+                - name: home
+                  label: Home page
+                  widget: object
+                  fields:
+                      - { name: title, label: Title, widget: string }
+                      - name: hero
+                        label: Hero
+                        widget: object
+                        fields:
+                            - { name: greeting, label: Greeting, widget: string }
+                            - name: cta
+                              label: Action buttons
+                              widget: object
+                              fields:
+                                  - { name: resume, label: Resume, widget: string }
+                                  - { name: contact, label: Contact, widget: string }
+                      - name: featuredProjects
+                        label: Featured projects
+                        widget: object
+                        fields:
+                            - { name: title, label: Title, widget: string }
+                            - { name: subtitle, label: Subtitle, widget: string }
+                      - name: latestPosts
+                        label: Latest posts
+                        widget: object
+                        fields:
+                            - { name: title, label: Title, widget: string }
+                            - { name: subtitle, label: Subtitle, widget: string }
+                      - name: experiences
+                        label: Experiences
+                        widget: object
+                        fields:
+                            - { name: title, label: Title, widget: string }
+                            - { name: subtitle, label: Subtitle, widget: string }
+                      - name: services
+                        label: Services
+                        widget: object
+                        fields:
+                            - { name: title, label: Title, widget: string }
+                            - { name: subtitle, label: Subtitle, widget: string }
+                      - name: testimonials
+                        label: Testimonials
+                        widget: object
+                        fields:
+                            - { name: title, label: Title, widget: string }
+                            - { name: subtitle, label: Subtitle, widget: string }
+                - name: blog
+                  label: Blog
+                  widget: object
+                  fields:
+                      - { name: title, label: Title, widget: string }
+                      - { name: subtitle, label: Subtitle, widget: string }
+                      - { name: readTime, label: 'Read time (use {minutes})', widget: string }
+                      - { name: postedOn, label: Posted on, widget: string }
+                      - { name: by, label: By, widget: string }
+                      - { name: tags, label: Tags, widget: string }
+                      - { name: category, label: Category, widget: string }
+                      - { name: share, label: Share, widget: string }
+                - name: projects
+                  label: Projects
+                  widget: object
+                  fields:
+                      - { name: title, label: Title, widget: string }
+                      - { name: subtitle, label: Subtitle, widget: string }
+                      - { name: viewProject, label: View project, widget: string }
+                      - { name: viewCode, label: View code, widget: string }
+                      - { name: tags, label: Tags, widget: string }
+                - name: experiences
+                  label: Experiences
+                  widget: object
+                  fields:
+                      - { name: title, label: Title, widget: string }
+                      - { name: subtitle, label: Subtitle, widget: string }
+                      - { name: present, label: Present (ongoing role), widget: string }
+                - name: skills
+                  label: Skills
+                  widget: object
+                  fields:
+                      - { name: title, label: Title, widget: string }
+                      - { name: subtitle, label: Subtitle, widget: string }
+                      - name: levels
+                        label: Skill levels
+                        widget: object
+                        fields:
+                            - { name: basic, label: Basic, widget: string }
+                            - { name: intermediate, label: Intermediate, widget: string }
+                            - { name: advanced, label: Advanced, widget: string }
+                            - { name: expert, label: Expert, widget: string }
+                      - { name: since, label: 'Since (use {year})', widget: string }
+                - name: courses
+                  label: Courses
+                  widget: object
+                  fields:
+                      - { name: title, label: Title, widget: string }
+                      - { name: subtitle, label: Subtitle, widget: string }
+                      - { name: workload, label: 'Workload (use {hours})', widget: string }
+                      - { name: certificate, label: View certificate, widget: string }
+                      - { name: courseLink, label: View course, widget: string }
+                - name: services
+                  label: Services
+                  widget: object
+                  fields:
+                      - { name: title, label: Title, widget: string }
+                      - { name: subtitle, label: Subtitle, widget: string }
+                - name: presentations
+                  label: Presentations
+                  widget: object
+                  fields:
+                      - { name: title, label: Title, widget: string }
+                      - { name: subtitle, label: Subtitle, widget: string }
+                      - { name: viewSlides, label: View slides, widget: string }
+                      - { name: viewVideo, label: View video, widget: string }
+                - name: publications
+                  label: Publications
+                  widget: object
+                  fields:
+                      - { name: title, label: Title, widget: string }
+                      - { name: subtitle, label: Subtitle, widget: string }
+                      - { name: viewPublication, label: View publication, widget: string }
+                      - name: types
+                        label: Publication types
+                        widget: object
+                        fields:
+                            - { name: article, label: Article, widget: string }
+                            - { name: book, label: Book, widget: string }
+                            - { name: paper, label: Paper, widget: string }
+                            - { name: tutorial, label: Tutorial, widget: string }
+                            - { name: other, label: Other, widget: string }
+                - name: search
+                  label: Search
+                  widget: object
+                  fields:
+                      - { name: title, label: Title, widget: string }
+                      - { name: subtitle, label: Subtitle, widget: string }
+                      - { name: placeholder, label: Placeholder, widget: string }
+                      - { name: results, label: 'Results (use {count})', widget: string }
+                      - { name: noResults, label: 'No results (use {query})', widget: string }
+                      - { name: searching, label: Searching, widget: string }
+                - name: contact
+                  label: Contact
+                  widget: object
+                  fields:
+                      - { name: title, label: Title, widget: string }
+                      - { name: subtitle, label: Subtitle, widget: string }
+                      - { name: name, label: Name field, widget: string }
+                      - { name: email, label: Email field, widget: string }
+                      - { name: message, label: Message field, widget: string }
+                      - { name: send, label: Send button, widget: string }
+                      - { name: github, label: GitHub, widget: string }
+                      - { name: linkedin, label: LinkedIn, widget: string }
+                      - { name: twitter, label: Twitter, widget: string }
+                      - { name: noLinks, label: No contact links message, widget: string }
+                - name: footer
+                  label: Footer
+                  widget: object
+                  fields:
+                      - { name: rights, label: Rights, widget: string }
+                      - { name: madeWith, label: Made with, widget: string }
+                      - { name: by, label: By, widget: string }
+                - name: metadata
+                  label: Page SEO
+                  widget: object
+                  fields:
+                      - name: home
+                        label: Home
+                        widget: object
+                        fields:
+                            - { name: title, label: Title, widget: string }
+                            - { name: description, label: Description, widget: string }
+                      - name: blog
+                        label: Blog
+                        widget: object
+                        fields:
+                            - { name: title, label: Title, widget: string }
+                            - { name: description, label: Description, widget: string }
+                      - name: projects
+                        label: Projects
+                        widget: object
+                        fields:
+                            - { name: title, label: Title, widget: string }
+                            - { name: description, label: Description, widget: string }
+                      - name: experiences
+                        label: Experiences
+                        widget: object
+                        fields:
+                            - { name: title, label: Title, widget: string }
+                            - { name: description, label: Description, widget: string }
+                      - name: skills
+                        label: Skills
+                        widget: object
+                        fields:
+                            - { name: title, label: Title, widget: string }
+                            - { name: description, label: Description, widget: string }
+                      - name: courses
+                        label: Courses
+                        widget: object
+                        fields:
+                            - { name: title, label: Title, widget: string }
+                            - { name: description, label: Description, widget: string }
+                      - name: services
+                        label: Services
+                        widget: object
+                        fields:
+                            - { name: title, label: Title, widget: string }
+                            - { name: description, label: Description, widget: string }
+                      - name: presentations
+                        label: Presentations
+                        widget: object
+                        fields:
+                            - { name: title, label: Title, widget: string }
+                            - { name: description, label: Description, widget: string }
+                      - name: publications
+                        label: Publications
+                        widget: object
+                        fields:
+                            - { name: title, label: Title, widget: string }
+                            - { name: description, label: Description, widget: string }
+                      - name: search
+                        label: Search
+                        widget: object
+                        fields:
+                            - { name: title, label: Title, widget: string }
+                            - { name: description, label: Description, widget: string }
+                      - name: contact
+                        label: Contact
+                        widget: object
+                        fields:
+                            - { name: title, label: Title, widget: string }
+                            - { name: description, label: Description, widget: string }

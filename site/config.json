@@ -1,36 +1,31 @@
 {
-    "siteName": "Portfolio",
+    "siteName": "Cassiana Lima",
     "siteUrl": "https://cglima.github.io",
-    "seoDescription": "Site pessoal e portfólio de Cassiana Gabriela Lima Barreto.",
+    "seoDescription": "Site pessoal e portfólio de C. G. Lima.",
     "ogImage": "/images/og-default.png",
-
     "owner": {
-        "name": "Cassiana Gabriela Lima Barreto",
-        "title": "Engenheira de Dados",
-        "bio": "",
-        "email": "",
-        "avatar": "/images/avatar.jpg",
+        "name": "C. G. Lima",
+        "title": "Desenvolvedor de Software",
+        "bio": "Teste da Bio",
+        "email": "lima.cglima@gmail.com",
+        "avatar": "/images/gatona_cropped.png",
         "github": "https://github.com/cglima",
-        "linkedin": "",
-        "twitter": ""
+        "linkedin": "https://www.linkedin.com/in/cassianalimabarreto/",
+        "twitter": "cglima"
     },
-
     "theme": {
         "primaryColor": "#8855DF",
         "secondaryColor": "#64D8CB",
         "fontName": "Roboto",
         "fontUrl": "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
     },
-
     "pwa": {
         "themeColor": "#8855DF",
         "backgroundColor": "#0F0F1A",
         "startUrl": "/pt"
     },
-
     "locales": ["pt", "en"],
     "defaultLocale": "pt",
-
     "sections": {
         "hero": true,
         "services": true,
@@ -41,18 +36,50 @@
         "blog": true,
         "contact": true
     },
-
     "navigation": [
-        { "key": "home", "visible": true },
-        { "key": "blog", "visible": true },
-        { "key": "projects", "visible": true },
-        { "key": "experiences", "visible": true },
-        { "key": "skills", "visible": false },
-        { "key": "courses", "visible": true },
-        { "key": "services", "visible": false },
-        { "key": "presentations", "visible": false },
-        { "key": "publications", "visible": false },
-        { "key": "search", "visible": true },
-        { "key": "contact", "visible": true }
+        {
+            "key": "home",
+            "visible": true
+        },
+        {
+            "key": "blog",
+            "visible": true
+        },
+        {
+            "key": "projects",
+            "visible": true
+        },
+        {
+            "key": "experiences",
+            "visible": true
+        },
+        {
+            "key": "skills",
+            "visible": false
+        },
+        {
+            "key": "courses",
+            "visible": true
+        },
+        {
+            "key": "services",
+            "visible": false
+        },
+        {
+            "key": "presentations",
+            "visible": false
+        },
+        {
+            "key": "publications",
+            "visible": false
+        },
+        {
+            "key": "search",
+            "visible": true
+        },
+        {
+            "key": "contact",
+            "visible": true
+        }
     ]
 }
