@@ -124,31 +124,29 @@ Para parar o servidor, pressione `Ctrl + C` no terminal.
 
 O projeto possui um painel de administração visual (Sveltia CMS) que permite criar e editar posts, projetos, experiências e muito mais, sem precisar editar arquivos manualmente.
 
-Para usar o CMS localmente, você precisa de **dois terminais abertos ao mesmo tempo**.
+> **⚠️ Requisito:** o modo local funciona apenas em browsers baseados em Chromium: **Google Chrome**, **Microsoft Edge** ou **Brave**. Não funciona no Firefox nem no Safari.
 
-### Terminal 1 — Servidor do site
-```bash
-yarn dev
-```
+### Passo a passo
 
-### Terminal 2 — Proxy do CMS
-```bash
-yarn cms
-```
+1. Inicie o servidor de desenvolvimento normalmente:
+   ```bash
+   yarn dev
+   ```
 
-Aguarde aparecer a mensagem `Proxy server listening on port 8081`.
+2. Abra o **Chrome** (ou Edge/Brave) e acesse:
+   ```
+   http://localhost:3600/admin/index.html
+   ```
 
-### Acessar o painel
+3. Clique em **"Work with Local Repository"**
 
-Abra o navegador em:
+4. Uma janela de seleção de pasta vai abrir. Navegue até a pasta raiz do projeto e clique em **"Selecionar pasta"** (ou "Open"). O projeto tem uma pasta `.git` dentro — isso é necessário para o CMS funcionar.
 
-```
-http://localhost:3600/admin/index.html
-```
+5. Se o browser pedir permissão para acessar os arquivos, clique em **"Permitir"** (ou "Allow").
 
-Na tela de login, clique em **"Local"**. Pronto — você verá o painel com todas as coleções de conteúdo.
+6. Pronto — você está no painel. Todas as alterações são salvas diretamente nos arquivos da sua máquina.
 
-> **Importante:** O botão "Local" só aparece quando o `yarn cms` está rodando. Se aparecer só o botão "GitHub", verifique se o Terminal 2 está ativo.
+> **Nota:** o Sveltia CMS não faz commit automaticamente. Quando terminar de editar, use `git add . && git commit -m "sua mensagem" && git push` para publicar as alterações.
 
 ### O que você pode editar pelo CMS
 
@@ -352,7 +350,7 @@ As alterações feitas pelo CMS em produção são **commitadas diretamente no r
 | O que fazer | Como fazer |
 |---|---|
 | Rodar localmente | `yarn dev` → abrir http://localhost:3600 |
-| Editar pelo CMS local | `yarn dev` + `yarn cms` (2 terminais) → http://localhost:3600/admin/index.html |
+| Editar pelo CMS local | `yarn dev` → abrir http://localhost:3600/admin/index.html no Chrome → "Work with Local Repository" |
 | Publicar alterações | `git add . && git commit -m "msg" && git push` |
 | Ver site publicado | https://SEU_USUARIO.github.io |
 | Editar em produção | https://SEU_USUARIO.github.io/admin/ (com token do GitHub) |

@@ -16,10 +16,6 @@ backend:
     repo: josenaldo/cglima.github.io
     branch: main
 
-# Enable local backend for development (run `yarn cms` to start the proxy server)
-# When working locally: open http://localhost:3600/admin/index.html → click "Local" button
-local_backend: true
-
 # Images are stored in site/images/ (git) and synced to public/images/ at build time.
 media_folder: site/images
 public_folder: /images

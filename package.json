@@ -4,7 +4,6 @@
     "private": true,
     "scripts": {
         "sync-assets": "node scripts/sync-site-assets.mjs",
-        "cms": "netlify-cms-proxy-server",
         "predev": "yarn sync-assets",
         "dev": "concurrently \"contentlayer2 dev\" \"next dev -p 3600 --webpack\" \"chokidar 'site/images/**' 'site/icons/**' -c 'yarn sync-assets'\"",
         "prebuild": "yarn sync-assets",
@@ -74,7 +73,6 @@
         "eslint-plugin-react-hooks": "^7.0.1",
         "eslint-plugin-simple-import-sort": "^12.1.1",
         "jsdom": "^28.1.0",
-        "netlify-cms-proxy-server": "^1.3.24",
         "prettier": "^3.8.1",
         "typescript": "^5",
         "vitest": "^4.0.18"
