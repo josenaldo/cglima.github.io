@@ -14,8 +14,14 @@ const pwaConfig = withPWA({
     disable: process.env.NODE_ENV === 'development',
 })
 
+// Base path for deployments under a subpath (e.g. /cglima.github.io when hosted
+// from another user's account). Empty string in dev and when at the root domain.
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
+
 const nextConfig: NextConfig = {
     output: 'export',
+    basePath,
+    assetPrefix: basePath || undefined,
     reactStrictMode: true,
     productionBrowserSourceMaps: true,
     images: {
